@@ -1,0 +1,2176 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IP for Artists | Roshni Ghosh, Advocate &amp; Intellectual Property Consultant</title>
+  <meta name="description" content="IP for Artists is the Intellectual Property law practice and informational resource of Roshni Ghosh, Advocate (Bar Council of West Bengal), advising musicians, visual artists, photographers, writers, software developers, cinematographers, and animators on Indian copyright, IPRS royalty registration, trademark, and contract law." />
+
+  <!-- Google Fonts: Newsreader (Editorial Serif) & Plus Jakarta Sans (Clean Humanist Sans) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Tailored Violet Studio & Chambers Palette -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            lavenderMist: '#FAF8FC',
+            vellum: '#FFFFFF',
+            lilacWash: '#F3EFFA',
+            petalTint: '#EAE2F6',
+            aubergine: '#1E152A',
+            aubergineHover: '#322346',
+            plumSlate: '#4B4259',
+            mauveTaupe: '#756B84',
+            lilacBorder: '#E2DAEE',
+            royalViolet: '#5B3A8C',
+            iris: '#7A56B3',
+            mulberry: '#8E4A7E',
+            mulberrySoft: '#F8EEF5',
+            periwinkle: '#495899',
+            periwinkleSoft: '#EEF0F9',
+            wisteria: '#6B4C9A',
+            wisteriaSoft: '#F2EEFA',
+            orchid: '#965484',
+            orchidSoft: '#F9EFF6'
+          },
+          fontFamily: {
+            serif: ['Newsreader', 'Georgia', 'serif'],
+            sans: ['Plus Jakarta Sans', '-apple-system', 'BlinkMacSystemFont', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    body {
+      font-feature-settings: "kern" 1, "liga" 1;
+    }
+    .tabular-nums {
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* Animated Editorial Link Underline */
+    .editorial-link {
+      position: relative;
+    }
+    .editorial-link::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      width: 0;
+      height: 2px;
+      border-radius: 9999px;
+      background: linear-gradient(90deg, #8E4A7E, #5B3A8C, #495899);
+      transition: width 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .editorial-link:hover::after {
+      width: 100%;
+    }
+
+    /* Top Reading Progress Ribbon */
+    #reading-progress {
+      background: linear-gradient(90deg, #8E4A7E 0%, #5B3A8C 50%, #495899 100%);
+      transform-origin: left center;
+      transform: scaleX(0);
+      transition: transform 0.1s ease-out;
+    }
+
+    /* Ambient Violet Shimmer Bar */
+    @keyframes shimmerSweep {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .violet-ribbon {
+      background: linear-gradient(90deg, #8E4A7E, #5B3A8C, #7A56B3, #495899);
+      background-size: 200% 200%;
+      animation: shimmerSweep 12s ease infinite;
+    }
+
+    /* Carousel Track Smooth Motion */
+    #carousel-track {
+      transition: transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+
+    .carousel-slide-img {
+      transition: transform 1.2s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .carousel-frame:hover .carousel-slide-img {
+      transform: scale(1.03);
+    }
+
+    /* Scroll Reveal Motion */
+    .reveal-on-scroll {
+      opacity: 0;
+      transform: translateY(18px);
+      transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .reveal-on-scroll.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Interactive Card Lift */
+    .studio-card {
+      transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+    .studio-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 18px 36px -14px rgba(91, 58, 140, 0.14);
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .violet-ribbon {
+        animation: none;
+      }
+      #carousel-track,
+      .carousel-slide-img,
+      .reveal-on-scroll,
+      .studio-card {
+        transition: none;
+      }
+      .reveal-on-scroll {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
+</head>
+<body class="bg-lavenderMist text-aubergine font-sans antialiased selection:bg-royalViolet selection:text-white">
+
+  <!-- Bar Council of India (BCI) Rule 36 Disclaimer Modal -->
+  <div
+    id="bci-modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="bci-modal-title"
+    class="fixed inset-0 z-50 flex items-center justify-center bg-aubergine/75 backdrop-blur-md p-4 sm:p-6"
+  >
+    <div class="w-full max-w-2xl bg-vellum border border-lilacBorder rounded-3xl shadow-2xl overflow-hidden">
+      <div class="h-2 w-full violet-ribbon"></div>
+
+      <div class="p-7 sm:p-11">
+        <div class="flex flex-wrap items-center justify-between gap-2 pb-4 border-b border-lilacBorder">
+          <span class="text-[11px] font-semibold uppercase tracking-[0.16em] text-royalViolet bg-lilacWash px-3.5 py-1 rounded-full">
+            Bar Council of India · Rule 36 Notice
+          </span>
+          <span class="text-[11px] font-medium uppercase tracking-[0.14em] text-mauveTaupe tabular-nums">
+            Enrolment No. F/3821/2024
+          </span>
+        </div>
+
+        <h2 id="bci-modal-title" class="font-serif text-2xl sm:text-3xl font-normal text-aubergine tracking-tight mt-6 mb-5">
+          IP for Artists: <span class="italic text-royalViolet">Regulatory Disclaimer &amp; Acknowledgement</span>
+        </h2>
+
+        <div class="space-y-4 text-sm leading-relaxed text-plumSlate border-b border-lilacBorder pb-6">
+          <p>
+            In accordance with Rule 36, Chapter II, Part VI of the Bar Council of India Rules, advocates enrolled in India are prohibited from soliciting work or advertising, directly or indirectly.
+          </p>
+          <p>
+            <strong class="font-semibold text-aubergine">IP for Artists</strong> is an informational resource maintained by <strong class="font-semibold text-aubergine">Roshni Ghosh</strong>, Advocate, providing general particulars regarding Indian Intellectual Property statutes, copyright society procedures, and contractual documentation for musicians, visual artists, photographers, writers, software developers, cinematographers, and animators.
+          </p>
+          <p class="font-medium text-aubergine pt-1">
+            By selecting “Acknowledge &amp; Enter”, you confirm that:
+          </p>
+          <ol class="space-y-2.5 pl-4 border-l-2 border-iris/50 text-plumSlate">
+            <li>
+              <span class="font-semibold text-royalViolet tabular-nums mr-1.5">I.</span> You are accessing information regarding this practice and Indian Intellectual Property law entirely of your own initiative.
+            </li>
+            <li>
+              <span class="font-semibold text-royalViolet tabular-nums mr-1.5">II.</span> There has been no advertisement, personal communication, solicitation, invitation, or inducement of any nature from Roshni Ghosh or her chambers.
+            </li>
+            <li>
+              <span class="font-semibold text-royalViolet tabular-nums mr-1.5">III.</span> The material published on this website is provided solely for general informational purposes and neither constitutes legal advice nor establishes an advocate-client relationship.
+            </li>
+          </ol>
+        </div>
+
+        <div class="mt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <p class="text-[11px] uppercase tracking-[0.14em] text-mauveTaupe">
+            Roshni Ghosh · Bar Council of West Bengal
+          </p>
+          <button
+            id="bci-acknowledge-btn"
+            type="button"
+            class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-3.5 rounded-full bg-royalViolet text-white text-xs font-semibold uppercase tracking-[0.14em] hover:bg-aubergine transition-colors shadow-sm cursor-pointer"
+          >
+            Acknowledge &amp; Enter
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Top Institutional Ledger Bar -->
+  <div class="bg-aubergine text-white/85 border-b border-aubergine">
+    <div class="max-w-6xl mx-auto px-5 sm:px-10 py-2.5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 text-[10px] sm:text-[11px] uppercase tracking-[0.16em]">
+      <span class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-iris"></span>
+        Bar Council of West Bengal · Enrolment No. F/3821/2024
+      </span>
+      <span class="text-white/70">Kolkata, West Bengal, India</span>
+    </div>
+  </div>
+
+  <!-- Sticky Soft-Rounded Navigation Header -->
+  <header class="sticky top-0 z-40 bg-lavenderMist/90 backdrop-blur-md border-b border-lilacBorder">
+    <!-- Reading Progress Accent Line -->
+    <div id="reading-progress" class="h-[2.5px] w-full"></div>
+
+    <div class="max-w-6xl mx-auto px-5 sm:px-10">
+      <div class="flex items-center justify-between h-20">
+        <!-- Brand & Practitioner Identity -->
+        <a href="#top" class="group flex flex-col">
+          <div class="flex items-center gap-2.5">
+            <span class="font-serif text-2xl sm:text-[28px] font-normal tracking-tight text-aubergine">
+              IP <span class="italic text-royalViolet">for</span> Artists
+            </span>
+            <span class="hidden sm:inline-block text-[10px] font-semibold uppercase tracking-[0.18em] text-royalViolet bg-petalTint px-2.5 py-0.5 rounded-full">
+              India
+            </span>
+          </div>
+          <span class="text-[11px] uppercase tracking-[0.14em] text-mauveTaupe mt-0.5">
+            Roshni Ghosh · Advocate &amp; IP Consultant
+          </span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav aria-label="Primary Navigation" class="hidden md:flex items-center space-x-7 lg:space-x-8 text-xs uppercase tracking-[0.13em] font-medium text-plumSlate">
+          <a href="#practice-areas" class="editorial-link hover:text-royalViolet transition-colors py-1">Practice Areas</a>
+          <a href="#iprs" class="editorial-link hover:text-royalViolet transition-colors py-1">IPRS &amp; Royalties</a>
+          <a href="#checklist" class="editorial-link hover:text-royalViolet transition-colors py-1">Release Checklist</a>
+          <a href="#about" class="editorial-link hover:text-royalViolet transition-colors py-1">The Practice</a>
+          <a
+            href="#contact"
+            class="px-5 py-2.5 rounded-full bg-royalViolet text-white hover:bg-aubergine transition-colors shadow-sm"
+          >
+            Chamber &amp; Enquiry
+          </a>
+        </nav>
+
+        <!-- Mobile Menu Toggle -->
+        <button
+          id="mobile-menu-btn"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+          class="md:hidden px-4 py-2 rounded-full border border-lilacBorder text-[11px] font-semibold uppercase tracking-[0.15em] text-aubergine bg-vellum hover:border-royalViolet transition-colors cursor-pointer"
+        >
+          Menu
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-lilacBorder bg-vellum rounded-b-3xl shadow-lg">
+      <nav aria-label="Mobile Navigation" class="max-w-6xl mx-auto px-6 py-3 flex flex-col divide-y divide-lilacBorder text-xs uppercase tracking-[0.14em] font-medium">
+        <a href="#practice-areas" class="mobile-nav-link py-4 text-aubergine hover:text-royalViolet">I. Practice Areas</a>
+        <a href="#iprs" class="mobile-nav-link py-4 text-aubergine hover:text-royalViolet">II. IPRS &amp; Music Royalties</a>
+        <a href="#checklist" class="mobile-nav-link py-4 text-aubergine hover:text-royalViolet">III. Release Checklist</a>
+        <a href="#about" class="mobile-nav-link py-4 text-aubergine hover:text-royalViolet">IV. About the Practice</a>
+        <a href="#contact" class="mobile-nav-link py-4 text-royalViolet font-semibold">V. Chamber &amp; Enquiry</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="top">
+
+    <!-- Hero / Practice Overview Section with Copyright-Free Stock Photography Carousel -->
+    <section class="relative border-b border-lilacBorder overflow-hidden">
+      <!-- Soft Ambient Violet Glows -->
+      <div aria-hidden="true" class="pointer-events-none absolute -top-28 -right-24 w-[28rem] h-[28rem] rounded-full bg-iris/10 blur-3xl"></div>
+      <div aria-hidden="true" class="pointer-events-none absolute bottom-6 -left-24 w-[26rem] h-[26rem] rounded-full bg-mulberry/10 blur-3xl"></div>
+
+      <div class="max-w-6xl mx-auto px-5 sm:px-10 py-16 sm:py-24 lg:py-28 relative">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-12 items-center">
+
+          <!-- Left Column: Statement of Practice -->
+          <div class="lg:col-span-6 reveal-on-scroll">
+            <div class="inline-flex items-center gap-2.5 px-4 py-1.5 rounded-full bg-petalTint/80 border border-lilacBorder mb-6">
+              <span class="inline-block w-2 h-2 rounded-full bg-royalViolet"></span>
+              <span class="text-[11px] font-semibold uppercase tracking-[0.18em] text-royalViolet">
+                Intellectual Property Practice · India
+              </span>
+            </div>
+
+            <h1 class="font-serif text-4xl sm:text-5xl lg:text-[54px] font-normal text-aubergine leading-[1.09] tracking-[-0.02em] mb-7">
+              Precise legal protection for <span class="italic text-royalViolet">creative</span> &amp; <span class="italic text-mulberry">technical</span> work.
+            </h1>
+
+            <p class="text-base sm:text-[17px] text-plumSlate leading-[1.75] mb-9">
+              <strong class="font-semibold text-aubergine">IP for Artists</strong> is the Intellectual Property practice of Advocate <strong class="font-semibold text-aubergine">Roshni Ghosh</strong>. The practice advises independent creators, studios, publishers, and software builders across India on copyright registration, IPRS royalty registration, trademark protection, and clearly structured agreements that safeguard ownership before public release or commercial execution.
+            </p>
+
+            <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 mb-10">
+              <a
+                href="#checklist"
+                class="inline-flex items-center justify-center px-7 py-4 rounded-full bg-royalViolet text-white text-xs font-semibold uppercase tracking-[0.14em] hover:bg-aubergine transition-colors shadow-sm"
+              >
+                Review Pre-Release Checklist
+              </a>
+              <a
+                href="#iprs"
+                class="inline-flex items-center justify-center px-7 py-4 rounded-full bg-vellum border border-lilacBorder text-aubergine text-xs font-semibold uppercase tracking-[0.14em] hover:border-royalViolet hover:text-royalViolet transition-colors"
+              >
+                IPRS &amp; Royalty Registration
+              </a>
+            </div>
+
+            <!-- Statutory Pillars Strip -->
+            <div class="pt-6 border-t border-lilacBorder grid grid-cols-1 sm:grid-cols-3 gap-4 text-xs">
+              <div>
+                <span class="block text-[10px] font-semibold uppercase tracking-[0.16em] text-mauveTaupe mb-1">Governing Statutes</span>
+                <span class="font-medium text-aubergine">Copyright Act, 1957 · Trade Marks Act, 1999</span>
+              </div>
+              <div>
+                <span class="block text-[10px] font-semibold uppercase tracking-[0.16em] text-mauveTaupe mb-1">Core Mandate</span>
+                <span class="font-medium text-aubergine">Chain of Title, Registrations &amp; Splits</span>
+              </div>
+              <div>
+                <span class="block text-[10px] font-semibold uppercase tracking-[0.16em] text-mauveTaupe mb-1">Advisory Style</span>
+                <span class="font-medium text-aubergine">Preventive &amp; Plain-English Contracts</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Rounded Copyright-Free Creative Disciplines Carousel -->
+          <aside class="lg:col-span-6 reveal-on-scroll">
+            <div
+              id="studio-carousel"
+              role="region"
+              aria-roledescription="carousel"
+              aria-label="Creative and Technical Disciplines Showcase"
+              tabindex="0"
+              class="carousel-frame bg-vellum border border-lilacBorder rounded-3xl p-5 sm:p-6 shadow-xl shadow-royalViolet/5 focus:outline-none focus:border-royalViolet"
+            >
+              <!-- Top Carousel Ledger Bar -->
+              <div class="flex items-center justify-between gap-2 pb-3.5 mb-3.5 border-b border-lilacBorder">
+                <div class="flex items-center gap-2.5">
+                  <span id="carousel-counter" class="text-[11px] font-semibold uppercase tracking-[0.16em] text-aubergine tabular-nums">
+                    01 / 04
+                  </span>
+                  <span class="text-lilacBorder">·</span>
+                  <span class="text-[10px] font-semibold uppercase tracking-[0.15em] text-royalViolet bg-lilacWash px-3 py-1 rounded-full">
+                    Copyright-Free Stock
+                  </span>
+                </div>
+
+                <div class="flex items-center gap-2">
+                  <button
+                    id="carousel-prev"
+                    type="button"
+                    aria-label="Previous discipline slide"
+                    class="w-9 h-9 rounded-full flex items-center justify-center border border-lilacBorder bg-lavenderMist text-aubergine text-xs hover:bg-royalViolet hover:text-white hover:border-royalViolet transition-colors cursor-pointer"
+                  >
+                    ←
+                  </button>
+                  <button
+                    id="carousel-next"
+                    type="button"
+                    aria-label="Next discipline slide"
+                    class="w-9 h-9 rounded-full flex items-center justify-center border border-lilacBorder bg-lavenderMist text-aubergine text-xs hover:bg-royalViolet hover:text-white hover:border-royalViolet transition-colors cursor-pointer"
+                  >
+                    →
+                  </button>
+                </div>
+              </div>
+
+              <!-- Viewport & Sliding Track -->
+              <div class="relative overflow-hidden rounded-2xl border border-lilacBorder bg-lilacWash aspect-[16/11]">
+                <div id="carousel-track" class="flex w-full h-full">
+
+                  <!-- Slide 01: Music & Audio -->
+                  <div class="w-full h-full shrink-0 relative" data-carousel-slide="0">
+                    <img
+                      src="https://s3.us-west-2.amazonaws.com/images.unsplash.com/small/photo-1598488035139-bdbb2231ce04"
+                      alt="Music production console and studio monitors in a recording studio"
+                      class="carousel-slide-img w-full h-full object-cover"
+                      onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');"
+                    />
+                    <div class="hidden w-full h-full flex flex-col items-center justify-center bg-mulberrySoft p-6 text-center">
+                      <span class="font-serif italic text-xl text-aubergine">Music &amp; Audio Production</span>
+                      <span class="text-xs text-plumSlate mt-1">Copyright-Free Studio Visual</span>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-aubergine/90 via-aubergine/25 to-transparent"></div>
+                    <div class="absolute bottom-0 inset-x-0 p-5 sm:p-6 text-white">
+                      <span class="inline-block text-[10px] font-semibold uppercase tracking-[0.16em] bg-mulberry text-white px-3 py-1 rounded-full mb-2.5">
+                        I · Sound &amp; Composition
+                      </span>
+                      <h2 class="font-serif text-2xl sm:text-[26px] font-normal leading-tight">
+                        Music &amp; Audio
+                      </h2>
+                      <p class="text-xs text-white/85 mt-1 leading-relaxed">
+                        Lyrics, musical scores, sound recordings, co-writer split sheets, and IPRS royalty registration.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Slide 02: Visual & Fine Arts -->
+                  <div class="w-full h-full shrink-0 relative" data-carousel-slide="1">
+                    <img
+                      src="https://images.pexels.com/photos/38371547/pexels-photo-38371547/free-photo-of-vibrant-artist-palette-with-brushes-in-studio.jpeg"
+                      alt="Artist wooden palette with oil pigments and paintbrushes in a fine art studio"
+                      class="carousel-slide-img w-full h-full object-cover"
+                      onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');"
+                    />
+                    <div class="hidden w-full h-full flex flex-col items-center justify-center bg-periwinkleSoft p-6 text-center">
+                      <span class="font-serif italic text-xl text-aubergine">Visual &amp; Fine Arts Studio</span>
+                      <span class="text-xs text-plumSlate mt-1">Copyright-Free Studio Visual</span>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-aubergine/90 via-aubergine/25 to-transparent"></div>
+                    <div class="absolute bottom-0 inset-x-0 p-5 sm:p-6 text-white">
+                      <span class="inline-block text-[10px] font-semibold uppercase tracking-[0.16em] bg-periwinkle text-white px-3 py-1 rounded-full mb-2.5">
+                        II · Sec. 2(c) Artistic Works
+                      </span>
+                      <h2 class="font-serif text-2xl sm:text-[26px] font-normal leading-tight">
+                        Visual &amp; Fine Arts
+                      </h2>
+                      <p class="text-xs text-white/85 mt-1 leading-relaxed">
+                        Paintings, illustrations, photography, commission contracts under Sec. 17(b), and moral rights.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Slide 03: Literature & Software -->
+                  <div class="w-full h-full shrink-0 relative" data-carousel-slide="2">
+                    <img
+                      src="https://images.unsplash.com/photo-1615914143778-1a1a6e50c5dd?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDE1fHx8ZW58MHx8fHx8"
+                      alt="Writer and developer workspace with manuscript notebook on a clean studio desk"
+                      class="carousel-slide-img w-full h-full object-cover"
+                      onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');"
+                    />
+                    <div class="hidden w-full h-full flex flex-col items-center justify-center bg-wisteriaSoft p-6 text-center">
+                      <span class="font-serif italic text-xl text-aubergine">Literature &amp; Software</span>
+                      <span class="text-xs text-plumSlate mt-1">Copyright-Free Studio Visual</span>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-aubergine/90 via-aubergine/25 to-transparent"></div>
+                    <div class="absolute bottom-0 inset-x-0 p-5 sm:p-6 text-white">
+                      <span class="inline-block text-[10px] font-semibold uppercase tracking-[0.16em] bg-royalViolet text-white px-3 py-1 rounded-full mb-2.5">
+                        III · Sec. 2(o) Literary Works
+                      </span>
+                      <h2 class="font-serif text-2xl sm:text-[26px] font-normal leading-tight">
+                        Literature &amp; Software
+                      </h2>
+                      <p class="text-xs text-white/85 mt-1 leading-relaxed">
+                        Books, screenplays, source code registration, contractor IP deeds, and SaaS trademarks.
+                      </p>
+                    </div>
+                  </div>
+
+                  <!-- Slide 04: Film & Animation -->
+                  <div class="w-full h-full shrink-0 relative" data-carousel-slide="3">
+                    <img
+                      src="https://images.pexels.com/photos/38058992/pexels-photo-38058992.jpeg?cs=srgb&dl=pexels-cmrcn-38058992.jpg&fm=jpg"
+                      alt="Professional cinema camera rig mounted on a film production set"
+                      class="carousel-slide-img w-full h-full object-cover"
+                      onerror="this.style.display='none'; this.nextElementSibling.classList.remove('hidden');"
+                    />
+                    <div class="hidden w-full h-full flex flex-col items-center justify-center bg-orchidSoft p-6 text-center">
+                      <span class="font-serif italic text-xl text-aubergine">Film &amp; Animation</span>
+                      <span class="text-xs text-plumSlate mt-1">Copyright-Free Studio Visual</span>
+                    </div>
+                    <div class="absolute inset-0 bg-gradient-to-t from-aubergine/90 via-aubergine/25 to-transparent"></div>
+                    <div class="absolute bottom-0 inset-x-0 p-5 sm:p-6 text-white">
+                      <span class="inline-block text-[10px] font-semibold uppercase tracking-[0.16em] bg-orchid text-white px-3 py-1 rounded-full mb-2.5">
+                        IV · Sec. 2(f) Motion Works
+                      </span>
+                      <h2 class="font-serif text-2xl sm:text-[26px] font-normal leading-tight">
+                        Film &amp; Animation
+                      </h2>
+                      <p class="text-xs text-white/85 mt-1 leading-relaxed">
+                        Cinematograph films, character art, festival chain-of-title clearances, and studio marks.
+                      </p>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Carousel Controls, Indicators & Copyright-Free Attribution Note -->
+              <div class="pt-4 mt-1 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                <div class="flex items-center gap-2" role="tablist" aria-label="Select carousel slide">
+                  <button
+                    type="button"
+                    data-carousel-dot="0"
+                    aria-label="Slide 1: Music and Audio"
+                    aria-selected="true"
+                    class="h-2.5 w-8 rounded-full bg-mulberry transition-all cursor-pointer"
+                  ></button>
+                  <button
+                    type="button"
+                    data-carousel-dot="1"
+                    aria-label="Slide 2: Visual and Fine Arts"
+                    aria-selected="false"
+                    class="h-2.5 w-2.5 rounded-full bg-lilacBorder hover:bg-periwinkle transition-all cursor-pointer"
+                  ></button>
+                  <button
+                    type="button"
+                    data-carousel-dot="2"
+                    aria-label="Slide 3: Literature and Software"
+                    aria-selected="false"
+                    class="h-2.5 w-2.5 rounded-full bg-lilacBorder hover:bg-royalViolet transition-all cursor-pointer"
+                  ></button>
+                  <button
+                    type="button"
+                    data-carousel-dot="3"
+                    aria-label="Slide 4: Film and Animation"
+                    aria-selected="false"
+                    class="h-2.5 w-2.5 rounded-full bg-lilacBorder hover:bg-orchid transition-all cursor-pointer"
+                  ></button>
+                </div>
+
+                <a
+                  id="carousel-checklist-cta"
+                  href="#checklist"
+                  data-jump-category="music"
+                  class="text-[11px] font-semibold uppercase tracking-[0.14em] text-royalViolet hover:text-aubergine transition-colors"
+                >
+                  Inspect Music &amp; Audio Checklist →
+                </a>
+              </div>
+
+              <p class="mt-3.5 pt-3 border-t border-lilacBorder text-[11px] text-mauveTaupe leading-relaxed">
+                All carousel photographs are sourced from <strong class="font-medium text-aubergine">copyright-free, royalty-free stock repositories</strong> (Unsplash &amp; Pexels permissive licenses) with zero copyright infringement.
+              </p>
+            </div>
+          </aside>
+
+        </div>
+
+        <!-- Four Statutory Categories Rounded Card Grid -->
+        <div class="mt-16 pt-12 border-t border-lilacBorder reveal-on-scroll">
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 mb-7">
+            <p class="text-[11px] font-semibold uppercase tracking-[0.18em] text-mauveTaupe">
+              Disciplines Represented Under Indian IP Statutes
+            </p>
+            <p class="text-xs text-mauveTaupe">
+              Select a discipline to inspect its pre-release legal checklist
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            <!-- Card 1: Music & Audio (Mulberry Violet) -->
+            <a href="#checklist" data-jump-category="music" class="studio-card group bg-vellum border border-lilacBorder rounded-2xl p-6 flex flex-col justify-between hover:border-mulberry">
+              <div>
+                <span class="inline-block text-[10px] font-semibold uppercase tracking-[0.16em] text-mulberry bg-mulberrySoft px-3 py-1 rounded-full mb-3">
+                  I · Sound &amp; Composition
+                </span>
+                <span class="block font-serif text-xl font-normal text-aubergine group-hover:text-mulberry transition-colors">
+                  Music &amp; Audio
+                </span>
+                <span class="block text-xs text-plumSlate mt-2 leading-relaxed">
+                  Musicians, Composers, Lyricists, Publishers &amp; Producers
+                </span>
+              </div>
+              <div class="mt-6 pt-3 border-t border-lilacBorder flex items-center justify-between text-[10px] uppercase tracking-[0.14em] text-mauveTaupe">
+                <span>Sec. 13(1)(a) &amp; (c)</span>
+                <span class="text-aubergine group-hover:text-mulberry font-semibold">Checklist →</span>
+              </div>
+            </a>
+
+            <!-- Card 2: Visual & Fine Arts (Periwinkle Indigo) -->
+            <a href="#checklist" data-jump-category="visual" class="studio-card group bg-vellum border border-lilacBorder rounded-2xl p-6 flex flex-col justify-between hover:border-periwinkle">
+              <div>
+                <span class="inline-block text-[10px] font-semibold uppercase tracking-[0.16em] text-periwinkle bg-periwinkleSoft px-3 py-1 rounded-full mb-3">
+                  II · Sec. 2(c) Artistic Works
+                </span>
+                <span class="block font-serif text-xl font-normal text-aubergine group-hover:text-periwinkle transition-colors">
+                  Visual &amp; Fine Arts
+                </span>
+                <span class="block text-xs text-plumSlate mt-2 leading-relaxed">
+                  Painters, Illustrators, Visual Artists &amp; Photographers
+                </span>
+              </div>
+              <div class="mt-6 pt-3 border-t border-lilacBorder flex items-center justify-between text-[10px] uppercase tracking-[0.14em] text-mauveTaupe">
+                <span>Sec. 17(b) &amp; Sec. 57</span>
+                <span class="text-aubergine group-hover:text-periwinkle font-semibold">Checklist →</span>
+              </div>
+            </a>
+
+            <!-- Card 3: Literature & Software (Royal Violet) -->
+            <a href="#checklist" data-jump-category="lit-soft" class="studio-card group bg-vellum border border-lilacBorder rounded-2xl p-6 flex flex-col justify-between hover:border-royalViolet">
+              <div>
+                <span class="inline-block text-[10px] font-semibold uppercase tracking-[0.16em] text-royalViolet bg-wisteriaSoft px-3 py-1 rounded-full mb-3">
+                  III · Sec. 2(o) Literary Works
+                </span>
+                <span class="block font-serif text-xl font-normal text-aubergine group-hover:text-royalViolet transition-colors">
+                  Literature &amp; Software
+                </span>
+                <span class="block text-xs text-plumSlate mt-2 leading-relaxed">
+                  Authors, Screenwriters, Programmers &amp; Studios
+                </span>
+              </div>
+              <div class="mt-6 pt-3 border-t border-lilacBorder flex items-center justify-between text-[10px] uppercase tracking-[0.14em] text-mauveTaupe">
+                <span>Manuscripts &amp; Code</span>
+                <span class="text-aubergine group-hover:text-royalViolet font-semibold">Checklist →</span>
+              </div>
+            </a>
+
+            <!-- Card 4: Film & Animation (Orchid Violet) -->
+            <a href="#checklist" data-jump-category="film-anim" class="studio-card group bg-vellum border border-lilacBorder rounded-2xl p-6 flex flex-col justify-between hover:border-orchid">
+              <div>
+                <span class="inline-block text-[10px] font-semibold uppercase tracking-[0.16em] text-orchid bg-orchidSoft px-3 py-1 rounded-full mb-3">
+                  IV · Sec. 2(f) Motion Works
+                </span>
+                <span class="block font-serif text-xl font-normal text-aubergine group-hover:text-orchid transition-colors">
+                  Film &amp; Animation
+                </span>
+                <span class="block text-xs text-plumSlate mt-2 leading-relaxed">
+                  Cinematographers, Animators &amp; Production Houses
+                </span>
+              </div>
+              <div class="mt-6 pt-3 border-t border-lilacBorder flex items-center justify-between text-[10px] uppercase tracking-[0.14em] text-mauveTaupe">
+                <span>Chain-of-Title &amp; IP</span>
+                <span class="text-aubergine group-hover:text-orchid font-semibold">Checklist →</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section I: Practice Areas -->
+    <section id="practice-areas" class="border-b border-lilacBorder scroll-mt-20">
+      <div class="max-w-6xl mx-auto px-5 sm:px-10 py-16 sm:py-24 lg:py-28">
+        <div class="max-w-3xl mb-14 reveal-on-scroll">
+          <div class="inline-flex items-center gap-2.5 px-3.5 py-1 rounded-full bg-periwinkleSoft mb-3">
+            <span class="inline-block w-2 h-2 rounded-full bg-periwinkle"></span>
+            <span class="text-[11px] font-semibold uppercase tracking-[0.18em] text-periwinkle">
+              Section I · Practice Areas
+            </span>
+          </div>
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-[42px] font-normal text-aubergine tracking-tight mb-4">
+            Representation Across <span class="italic text-royalViolet">Protection, Branding &amp; Contracts</span>
+          </h2>
+          <p class="text-sm sm:text-base text-plumSlate leading-relaxed">
+            Each engagement is structured around clarity of ownership and enforceable documentation. Expand any practice area below to examine the statutory scope of work and the records required to initiate an instruction.
+          </p>
+        </div>
+
+        <!-- Expandable Rounded Practice Area Cards -->
+        <div class="space-y-5 reveal-on-scroll">
+
+          <!-- Practice Area I -->
+          <article class="bg-vellum border border-lilacBorder rounded-3xl overflow-hidden shadow-sm">
+            <button
+              type="button"
+              aria-expanded="true"
+              aria-controls="panel-pa-01"
+              data-accordion-trigger="panel-pa-01"
+              class="w-full text-left p-6 sm:p-9 flex items-start justify-between gap-6 cursor-pointer hover:bg-lilacWash/50 transition-colors"
+            >
+              <div class="space-y-2.5 max-w-3xl">
+                <span class="inline-block text-[11px] font-semibold uppercase tracking-[0.16em] text-mulberry bg-mulberrySoft px-3 py-1 rounded-full">
+                  I · Copyright Act, 1957
+                </span>
+                <h3 class="font-serif text-2xl sm:text-[26px] font-normal text-aubergine">
+                  Copyright Registration &amp; Ownership Advisory
+                </h3>
+                <p class="text-sm sm:text-[15px] text-plumSlate leading-relaxed">
+                  End-to-end filing and prosecution before the Indian Copyright Office across Literary, Musical, Artistic, Cinematograph Film, and Sound Recording classes, establishing formal prima facie evidence of authorship and ownership under Section 48.
+                </p>
+              </div>
+              <span
+                data-accordion-indicator
+                class="shrink-0 mt-1 px-4 py-2 rounded-full border border-lilacBorder text-[11px] font-semibold uppercase tracking-[0.14em] text-aubergine bg-lavenderMist"
+              >
+                Collapse
+              </span>
+            </button>
+
+            <div id="panel-pa-01" class="border-t border-lilacBorder px-6 sm:px-9 py-8 sm:py-9 bg-lavenderMist/70">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div>
+                  <h4 class="text-[11px] font-semibold uppercase tracking-[0.18em] text-aubergine pb-3 border-b border-lilacBorder mb-4">
+                    Scope of Legal Work
+                  </h4>
+                  <ul class="space-y-3.5 text-sm text-plumSlate leading-relaxed">
+                    <li class="pl-4 border-l-2 border-mulberry">
+                      <strong class="font-semibold text-aubergine">Music &amp; Sound Recordings:</strong> Distinct registrations for lyrics (Literary Works), musical scores and compositions (Musical Works), and recorded masters (Sound Recordings).
+                    </li>
+                    <li class="pl-4 border-l-2 border-periwinkle">
+                      <strong class="font-semibold text-aubergine">Visual &amp; Fine Arts:</strong> Protection of paintings, illustrations, album artwork, graphic identity systems, and photographs as Artistic Works under Section 2(c).
+                    </li>
+                    <li class="pl-4 border-l-2 border-royalViolet">
+                      <strong class="font-semibold text-aubergine">Literature &amp; Software:</strong> Registration of books, manuscripts, screenplays, and software code (source and object code) as Literary Works under Section 2(o).
+                    </li>
+                    <li class="pl-4 border-l-2 border-orchid">
+                      <strong class="font-semibold text-aubergine">Film &amp; Animation:</strong> Registration of live-action films and animated productions as Cinematograph Films under Section 2(f), alongside underlying character and concept art.
+                    </li>
+                    <li class="pl-4 border-l-2 border-iris">
+                      Advisory on commissioned work defaults under Section 17, author moral rights under Section 57, and formal replies to Copyright Office discrepancy notices.
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 class="text-[11px] font-semibold uppercase tracking-[0.18em] text-aubergine pb-3 border-b border-lilacBorder mb-4">
+                    Required Client Documentation
+                  </h4>
+                  <ul class="space-y-3.5 text-sm text-plumSlate leading-relaxed">
+                    <li class="pl-4 border-l-2 border-lilacBorder">
+                      <strong class="font-semibold text-aubergine">Copies of the Work:</strong> Two copies in the prescribed format (audio files or notation for music; high-resolution plates for visual art and photography; manuscripts or redacted code extracts for literature and software; video files or storyboards for film and animation).
+                    </li>
+                    <li class="pl-4 border-l-2 border-lilacBorder">
+                      <strong class="font-semibold text-aubergine">Creator Particulars:</strong> Full legal names, residential or business addresses, and nationalities of all authors, composers, artists, writers, programmers, or producers.
+                    </li>
+                    <li class="pl-4 border-l-2 border-lilacBorder">
+                      <strong class="font-semibold text-aubergine">Publication Record:</strong> Year and country of first publication where the work has already been released, exhibited, published, or deployed publicly.
+                    </li>
+                    <li class="pl-4 border-l-2 border-lilacBorder">
+                      <strong class="font-semibold text-aubergine">Clearances &amp; Authorization:</strong> Written No Objection Certificates (NOCs) from co-creators or commissioning parties where applicable, together with a signed Power of Attorney.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Practice Area II -->
+          <article class="bg-vellum border border-lilacBorder rounded-3xl overflow-hidden shadow-sm">
+            <button
+              type="button"
+              aria-expanded="false"
+              aria-controls="panel-pa-02"
+              data-accordion-trigger="panel-pa-02"
+              class="w-full text-left p-6 sm:p-9 flex items-start justify-between gap-6 cursor-pointer hover:bg-periwinkleSoft/45 transition-colors"
+            >
+              <div class="space-y-2.5 max-w-3xl">
+                <span class="inline-block text-[11px] font-semibold uppercase tracking-[0.16em] text-periwinkle bg-periwinkleSoft px-3 py-1 rounded-full">
+                  II · Trade Marks Act, 1999 (IP India)
+                </span>
+                <h3 class="font-serif text-2xl sm:text-[26px] font-normal text-aubergine">
+                  Artist, Studio, Publication &amp; Software Trademarks
+                </h3>
+                <p class="text-sm sm:text-[15px] text-plumSlate leading-relaxed">
+                  Comprehensive clearance searches and registration before the Trade Marks Registry (IP India) to secure exclusive commercial rights over stage names, artist monikers, studio names, publishing imprints, software brands, production banners, and merchandise lines.
+                </p>
+              </div>
+              <span
+                data-accordion-indicator
+                class="shrink-0 mt-1 px-4 py-2 rounded-full border border-lilacBorder text-[11px] font-semibold uppercase tracking-[0.14em] text-aubergine bg-lavenderMist"
+              >
+                View Scope
+              </span>
+            </button>
+
+            <div id="panel-pa-02" class="hidden border-t border-lilacBorder px-6 sm:px-9 py-8 sm:py-9 bg-lavenderMist/70">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div>
+                  <h4 class="text-[11px] font-semibold uppercase tracking-[0.18em] text-aubergine pb-3 border-b border-lilacBorder mb-4">
+                    Scope of Legal Work
+                  </h4>
+                  <ul class="space-y-3.5 text-sm text-plumSlate leading-relaxed">
+                    <li class="pl-4 border-l-2 border-periwinkle">
+                      <strong class="font-semibold text-aubergine">Pre-Filing Clearance:</strong> Phonetic and device searches across the IP India database to assess registrability and identify conflicting prior marks prior to public brand launch.
+                    </li>
+                    <li class="pl-4 border-l-2 border-periwinkle">
+                      <strong class="font-semibold text-aubergine">Application &amp; Prosecution:</strong> Filing and prosecution of word and device mark applications with nationwide protection across India.
+                    </li>
+                    <li class="pl-4 border-l-2 border-periwinkle">
+                      <strong class="font-semibold text-aubergine">Nice Classification Strategy:</strong> Tailored class coverage across Class 9 (software, apps, games, recorded media), Class 16 (books, zines, fine art prints), Class 25 (apparel and branded merchandise), Class 28 (collectibles), Class 41 (live performances, film and animation production, photography, publishing), and Class 42 (SaaS and software engineering).
+                    </li>
+                    <li class="pl-4 border-l-2 border-periwinkle">
+                      <strong class="font-semibold text-aubergine">Examination Replies:</strong> Drafting reasoned legal responses to Examination Reports raising objections under Sections 9 and 11 of the Trade Marks Act, 1999.
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 class="text-[11px] font-semibold uppercase tracking-[0.18em] text-aubergine pb-3 border-b border-lilacBorder mb-4">
+                    Required Client Documentation
+                  </h4>
+                  <ul class="space-y-3.5 text-sm text-plumSlate leading-relaxed">
+                    <li class="pl-4 border-l-2 border-lilacBorder">
+                      <strong class="font-semibold text-aubergine">Mark Specification:</strong> Exact word mark (stage name, studio identity, imprint, or product title) and high-resolution artwork where a logo or stylized device is claimed.
+                    </li>
+                    <li class="pl-4 border-l-2 border-lilacBorder">
+                      <strong class="font-semibold text-aubergine">Prior Use Evidence:</strong> Date of first commercial use in India supported by dated invoices, streaming profiles, exhibition catalogues, or app store listings, or instructions to file on a “Proposed to be Used” basis.
+                    </li>
+                    <li class="pl-4 border-l-2 border-lilacBorder">
+                      <strong class="font-semibold text-aubergine">Applicant &amp; Fee Status:</strong> Legal particulars of the individual creator, partnership, or corporate entity, alongside Udyam / MSME registration where eligible for reduced statutory filing fees.
+                    </li>
+                    <li class="pl-4 border-l-2 border-lilacBorder">
+                      <strong class="font-semibold text-aubergine">Authorization:</strong> Executed Form TM-48 (Authorization of Agent / Power of Attorney).
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Practice Area III -->
+          <article class="bg-vellum border border-lilacBorder rounded-3xl overflow-hidden shadow-sm">
+            <button
+              type="button"
+              aria-expanded="false"
+              aria-controls="panel-pa-03"
+              data-accordion-trigger="panel-pa-03"
+              class="w-full text-left p-6 sm:p-9 flex items-start justify-between gap-6 cursor-pointer hover:bg-wisteriaSoft/50 transition-colors"
+            >
+              <div class="space-y-2.5 max-w-3xl">
+                <span class="inline-block text-[11px] font-semibold uppercase tracking-[0.16em] text-royalViolet bg-wisteriaSoft px-3 py-1 rounded-full">
+                  III · Licensing, Splits &amp; Assignments
+                </span>
+                <h3 class="font-serif text-2xl sm:text-[26px] font-normal text-aubergine">
+                  Contract Drafting &amp; Clause-by-Clause Review
+                </h3>
+                <p class="text-sm sm:text-[15px] text-plumSlate leading-relaxed">
+                  Drafting and clear-language legal review of commercial creative and technical contracts, ensuring strict compliance with Sections 18 and 19 of the Copyright Act, 1957 and separating bounded usage licenses from permanent assignments of copyright.
+                </p>
+              </div>
+              <span
+                data-accordion-indicator
+                class="shrink-0 mt-1 px-4 py-2 rounded-full border border-lilacBorder text-[11px] font-semibold uppercase tracking-[0.14em] text-aubergine bg-lavenderMist"
+              >
+                View Scope
+              </span>
+            </button>
+
+            <div id="panel-pa-03" class="hidden border-t border-lilacBorder px-6 sm:px-9 py-8 sm:py-9 bg-lavenderMist/70">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div>
+                  <h4 class="text-[11px] font-semibold uppercase tracking-[0.18em] text-aubergine pb-3 border-b border-lilacBorder mb-4">
+                    Scope of Legal Work by Discipline
+                  </h4>
+                  <ul class="space-y-3.5 text-sm text-plumSlate leading-relaxed">
+                    <li class="pl-4 border-l-2 border-royalViolet">
+                      <strong class="font-semibold text-aubergine">Music &amp; Audio:</strong> Co-writer split sheets, producer agreements, session performer releases, sync licenses, IPRS royalty carve-outs, and label or distribution contracts.
+                    </li>
+                    <li class="pl-4 border-l-2 border-royalViolet">
+                      <strong class="font-semibold text-aubergine">Visual &amp; Fine Arts:</strong> Commission agreements for painters and illustrators, commercial versus editorial photography licenses, gallery consignment agreements, and model or property releases.
+                    </li>
+                    <li class="pl-4 border-l-2 border-royalViolet">
+                      <strong class="font-semibold text-aubergine">Literature &amp; Software:</strong> Book publishing and translation agreements, screenwriter option contracts, independent contractor IP assignment deeds, SaaS terms, and open-source compliance audits.
+                    </li>
+                    <li class="pl-4 border-l-2 border-royalViolet">
+                      <strong class="font-semibold text-aubergine">Film &amp; Animation:</strong> Cinematographer and animator engagement agreements, character IP licensing, post-production vendor contracts, and festival or OTT distribution agreements.
+                    </li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 class="text-[11px] font-semibold uppercase tracking-[0.18em] text-aubergine pb-3 border-b border-lilacBorder mb-4">
+                    Required Client Documentation
+                  </h4>
+                  <ul class="space-y-3.5 text-sm text-plumSlate leading-relaxed">
+                    <li class="pl-4 border-l-2 border-lilacBorder">
+                      <strong class="font-semibold text-aubergine">For Contract Reviews:</strong> The complete draft agreement received from a client, label, studio, publisher, or agency, accompanied by a concise summary of the commercial terms negotiated.
+                    </li>
+                    <li class="pl-4 border-l-2 border-lilacBorder">
+                      <strong class="font-semibold text-aubergine">For Bespoke Drafting:</strong> Full legal names of all contracting parties, agreed ownership or royalty percentages, deliverables, fee schedule, permitted scope of use, duration, and territory.
+                    </li>
+                    <li class="pl-4 border-l-2 border-lilacBorder">
+                      <strong class="font-semibold text-aubergine">Commercial Correspondence:</strong> Any prior term sheets, statements of work (SOW), or written correspondence recording the commercial understanding between the parties.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Section II: IPRS & Music Royalties -->
+    <section id="iprs" class="border-b border-lilacBorder bg-vellum scroll-mt-20">
+      <div class="max-w-6xl mx-auto px-5 sm:px-10 py-16 sm:py-24 lg:py-28">
+
+        <!-- Section Header -->
+        <div class="max-w-3xl mb-14 reveal-on-scroll">
+          <div class="inline-flex items-center gap-2.5 px-3.5 py-1 rounded-full bg-mulberrySoft mb-3">
+            <span class="inline-block w-2 h-2 rounded-full bg-mulberry"></span>
+            <span class="text-[11px] font-semibold uppercase tracking-[0.18em] text-mulberry">
+              Section II · Collective Rights &amp; Music Royalties
+            </span>
+          </div>
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-[42px] font-normal text-aubergine tracking-tight mb-4">
+            The Indian Performing Right Society <span class="italic text-mulberry">(IPRS)</span>
+          </h2>
+          <p class="text-sm sm:text-base text-plumSlate leading-relaxed">
+            A complete guide for lyricists, composers, singer-songwriters, music publishers, and production houses on how IPRS operates under Section 33 of the Copyright Act, 1957, how songwriter royalties differ from distributor payouts, and how our chambers assist with IPRS registration readiness.
+          </p>
+        </div>
+
+        <!-- Two-Column Statutory Overview & Song vs. Master Comparison -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start mb-12 reveal-on-scroll">
+
+          <!-- Left 7 Cols: Statutory Mandate & Royalties Covered -->
+          <div class="lg:col-span-7">
+            <div class="bg-lavenderMist border border-lilacBorder rounded-3xl p-7 sm:p-9">
+              <span class="inline-block text-[11px] font-semibold uppercase tracking-[0.16em] text-mulberry bg-mulberrySoft px-3 py-1 rounded-full mb-3">
+                Statutory Mandate · Section 33, Copyright Act, 1957
+              </span>
+              <h3 class="font-serif text-2xl font-normal text-aubergine mb-4">
+                What IPRS Is &amp; What Royalties It Collects
+              </h3>
+              <div class="space-y-4 text-sm text-plumSlate leading-relaxed">
+                <p>
+                  <strong class="font-semibold text-aubergine">The Indian Performing Right Society Limited (IPRS)</strong> is India’s sole registered copyright society under Section 33 of the Copyright Act, 1957 authorized to license and collect royalties for <strong class="font-semibold text-aubergine">musical works</strong> (melody and composition) and <strong class="font-semibold text-aubergine">literary works associated with musical works</strong> (lyrics).
+                </p>
+                <p>
+                  Under the 2012 Amendment to the Copyright Act (Sections 18 and 19), authors (lyricists) and composers hold a statutory, inalienable right to receive an equal share of royalties alongside the publisher or assignee whenever their musical and literary works are utilized in any form (outside public exhibition in a cinema hall). Furthermore, under Section 19(8), any private contract that purports to assign rights contrary to the terms already assigned to a registered copyright society of which the author is a member is void.
+                </p>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mt-7 pt-6 border-t border-lilacBorder">
+                <div class="bg-vellum border border-lilacBorder rounded-2xl p-4">
+                  <h4 class="text-[11px] font-semibold uppercase tracking-[0.15em] text-royalViolet mb-1.5">
+                    Public Performance Royalties
+                  </h4>
+                  <p class="text-xs text-plumSlate leading-relaxed">
+                    Collected from live concerts, ticketed events, broadcast television, FM and satellite radio, hotels, restaurants, retail spaces, and commercial establishments playing music publicly.
+                  </p>
+                </div>
+                <div class="bg-vellum border border-lilacBorder rounded-2xl p-4">
+                  <h4 class="text-[11px] font-semibold uppercase tracking-[0.15em] text-mulberry mb-1.5">
+                    Mechanical &amp; Digital Royalties
+                  </h4>
+                  <p class="text-xs text-plumSlate leading-relaxed">
+                    Collected from audio and video streaming platforms (Spotify, Apple Music, JioSaavn, YouTube, OTT platforms) and physical or digital reproductions of underlying compositions and lyrics.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right 5 Cols: Crucial Distinction (Distributor vs. IPRS) -->
+          <div class="lg:col-span-5 bg-aubergine text-white rounded-3xl p-7 sm:p-9 shadow-lg shadow-aubergine/15">
+            <div class="flex items-center justify-between pb-4 border-b border-white/15 mb-5">
+              <span class="text-[10px] font-semibold uppercase tracking-[0.16em] text-white bg-royalViolet px-3 py-1 rounded-full">
+                Critical Distinction
+              </span>
+              <span class="text-[11px] uppercase tracking-[0.14em] text-white/65">
+                Two Royalty Streams
+              </span>
+            </div>
+
+            <h3 class="font-serif text-xl sm:text-2xl font-normal text-white mb-5">
+              Why Releasing Through a Distributor Does Not Register Your Song with IPRS
+            </h3>
+
+            <div class="space-y-4 text-sm leading-relaxed">
+              <div class="p-4 rounded-2xl bg-white/10 border border-white/15">
+                <span class="block text-[10px] font-semibold uppercase tracking-[0.16em] text-periwinkleSoft mb-1">
+                  Stream A · Sound Recording (Master)
+                </span>
+                <p class="text-xs text-white/85 leading-relaxed">
+                  Digital distributors and aggregators (such as DistroKid, TuneCore, Believe, or record labels) collect revenue strictly for the <strong class="font-semibold text-white">recorded audio file</strong> and pay the master owner.
+                </p>
+              </div>
+
+              <div class="p-4 rounded-2xl bg-white/10 border border-white/15">
+                <span class="block text-[10px] font-semibold uppercase tracking-[0.16em] text-mulberrySoft mb-1">
+                  Stream B · Lyrics &amp; Composition (IPRS)
+                </span>
+                <p class="text-xs text-white/85 leading-relaxed">
+                  <strong class="font-semibold text-white">IPRS</strong> collects performing and mechanical royalties for the <strong class="font-semibold text-white">underlying lyrics and melody</strong>, distributing royalties quarterly in India and internationally via reciprocal societies (PRS, ASCAP, BMI, APRA, GEMA) through your unique <strong class="font-semibold text-white">IPI Number</strong>.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Membership Categories, Official Fees, Eligibility & Documents -->
+        <div class="border border-lilacBorder bg-lavenderMist rounded-3xl overflow-hidden mb-12 reveal-on-scroll">
+          <div class="px-6 sm:px-9 py-6 border-b border-lilacBorder bg-lilacWash/60 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+            <div>
+              <span class="text-[11px] font-semibold uppercase tracking-[0.18em] text-royalViolet block">
+                Membership Structure, Official Fees &amp; Documentation
+              </span>
+              <h3 class="font-serif text-2xl font-normal text-aubergine mt-1">
+                Who Can Join IPRS &amp; What Is Required
+              </h3>
+            </div>
+            <span class="text-xs text-mauveTaupe bg-vellum px-3.5 py-1.5 rounded-full border border-lilacBorder">
+              Typical processing timeline: ~45 working days
+            </span>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-3 divide-y lg:divide-y-0 lg:divide-x divide-lilacBorder">
+
+            <!-- Column 1: Membership Classes & Official One-Time Fees -->
+            <div class="p-6 sm:p-8">
+              <h4 class="text-[11px] font-semibold uppercase tracking-[0.18em] text-aubergine pb-3 border-b border-lilacBorder mb-5">
+                1. Categories &amp; Official Fees
+              </h4>
+              <ul class="space-y-4 text-sm text-plumSlate leading-relaxed">
+                <li>
+                  <strong class="font-semibold text-aubergine block">Author &amp; Composer Members (Individuals)</strong>
+                  <span class="text-xs block mt-0.5">Open to lyricists, composers (music directors), singer-songwriters, and legal heirs of deceased writers.</span>
+                  <span class="inline-block mt-2 text-[11px] font-semibold uppercase tracking-[0.12em] text-mulberry bg-mulberrySoft px-3 py-1 rounded-full tabular-nums">
+                    Official Fee: ₹1,200 (One-Time)
+                  </span>
+                </li>
+                <li class="pt-3 border-t border-lilacBorder">
+                  <strong class="font-semibold text-aubergine block">Owner Publisher Members (Entities / Labels)</strong>
+                  <span class="text-xs block mt-0.5">Open to music publishers, record labels, and film or series producers holding publishing rights in musical and literary works.</span>
+                  <span class="inline-block mt-2 text-[11px] font-semibold uppercase tracking-[0.12em] text-royalViolet bg-wisteriaSoft px-3 py-1 rounded-full tabular-nums">
+                    Official Fee: ₹2,200 (₹3,400 Dual Role)
+                  </span>
+                </li>
+                <li class="pt-3 border-t border-lilacBorder text-xs text-mauveTaupe">
+                  Note: Statutory fees are paid directly online on the official IPRS portal. IPRS does not authorize third-party commission agents.
+                </li>
+              </ul>
+            </div>
+
+            <!-- Column 2: Eligibility & Step-by-Step Procedure -->
+            <div class="p-6 sm:p-8">
+              <h4 class="text-[11px] font-semibold uppercase tracking-[0.18em] text-aubergine pb-3 border-b border-lilacBorder mb-5">
+                2. Eligibility &amp; Enrolment Stages
+              </h4>
+              <ol class="space-y-3.5 text-xs text-plumSlate leading-relaxed">
+                <li>
+                  <strong class="font-semibold text-aubergine">Mandatory Released Work:</strong> Applicants must have at least <strong class="font-semibold text-aubergine">one commercially released or published work</strong> with verifiable credits (YouTube, Spotify, Apple Music, JioSaavn, or physical CD inlay). Unreleased demos do not qualify.
+                </li>
+                <li>
+                  <strong class="font-semibold text-aubergine">Online Application &amp; Work Notification:</strong> Submission of personal or entity profile, bank details, identity records, and Work Notification details for each released track.
+                </li>
+                <li>
+                  <strong class="font-semibold text-aubergine">Execution of Statutory Deeds:</strong> Upon initial scrutiny, IPRS dispatches physical copies of the <strong class="font-semibold text-aubergine">Deed of Assignment</strong> and <strong class="font-semibold text-aubergine">Indemnity Bond</strong>, which must be executed and returned within 15 days.
+                </li>
+                <li>
+                  <strong class="font-semibold text-aubergine">IPI Allocation &amp; Catalogue Upload:</strong> On receipt of the signed deeds, IPRS issues your unique <strong class="font-semibold text-aubergine">IPI Number</strong>, grants provisional membership (ratified by the Board and AGM), and enables bulk work and cue-sheet uploads.
+                </li>
+              </ol>
+            </div>
+
+            <!-- Column 3: Mandatory Documents Checklist -->
+            <div class="p-6 sm:p-8">
+              <h4 class="text-[11px] font-semibold uppercase tracking-[0.18em] text-aubergine pb-3 border-b border-lilacBorder mb-5">
+                3. Required Documentation
+              </h4>
+              <ul class="space-y-3 text-xs text-plumSlate leading-relaxed">
+                <li class="pl-3.5 border-l-2 border-mulberry">
+                  <strong class="font-semibold text-aubergine">PAN Card (Mandatory):</strong> The applicant’s name on the application, bank account, and song credits must align cleanly to prevent verification delays.
+                </li>
+                <li class="pl-3.5 border-l-2 border-periwinkle">
+                  <strong class="font-semibold text-aubergine">Identity &amp; Address Proof:</strong> Aadhaar card, Passport, Voter ID, Driving Licence, or registered Leave &amp; Licence agreement.
+                </li>
+                <li class="pl-3.5 border-l-2 border-royalViolet">
+                  <strong class="font-semibold text-aubergine">Bank Account Verification:</strong> Cancelled cheque leaf, passbook front page, or bank statement displaying account holder name, account number, and IFSC code.
+                </li>
+                <li class="pl-3.5 border-l-2 border-orchid">
+                  <strong class="font-semibold text-aubergine">Photograph &amp; Foreign NOC:</strong> Recent front-facing colour passport photograph, plus an NOC if already registered with a foreign society (such as PRS, ASCAP, or BMI).
+                </li>
+                <li class="pl-3.5 border-l-2 border-iris">
+                  <strong class="font-semibold text-aubergine">Work &amp; Entity Proofs:</strong> Streaming links or screenshots showing writer and composer credits (or production house letters and cue sheets for film, OTT, or advertising works), plus incorporation or partnership and GST records for publisher entities.
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Dedicated Box: IPRS Registration Assistance Offered by the Practice -->
+        <div class="bg-lilacWash border border-iris/30 rounded-3xl p-7 sm:p-10 reveal-on-scroll">
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+            <div class="lg:col-span-8">
+              <span class="inline-block text-[11px] font-semibold uppercase tracking-[0.16em] text-royalViolet bg-vellum px-3.5 py-1 rounded-full border border-lilacBorder mb-3">
+                Chambers Assistance · Legal &amp; Documentation Readiness
+              </span>
+              <h3 class="font-serif text-2xl sm:text-3xl font-normal text-aubergine mb-4">
+                IPRS Registration Assistance for Artists, Composers &amp; Publishers
+              </h3>
+              <p class="text-sm text-plumSlate leading-relaxed mb-6">
+                While applicants submit their membership application and official processing fee directly on the IPRS portal, applications frequently stall due to name mismatches across PAN and bank records, missing co-writer split documentation, unclear production house NOCs, or prior label contracts that conflict with Section 19(8) of the Copyright Act, 1957. Our chambers provide structured pre-filing and post-admission legal assistance:
+              </p>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs text-plumSlate leading-relaxed">
+                <div class="bg-vellum border border-lilacBorder rounded-2xl p-4">
+                  <strong class="font-semibold text-mulberry block mb-1">1. Contract &amp; Chain-of-Title Audit</strong>
+                  Reviewing existing label, producer, or film composer contracts to confirm you retain statutory author and composer royalty rights and have not signed conflicting assignments.
+                </div>
+                <div class="bg-vellum border border-lilacBorder rounded-2xl p-4">
+                  <strong class="font-semibold text-periwinkle block mb-1">2. Dossier &amp; Credit Verification</strong>
+                  Auditing PAN, bank records, release metadata, co-writer split sheets, and production house NOCs prior to portal submission so credits match across platforms.
+                </div>
+                <div class="bg-vellum border border-lilacBorder rounded-2xl p-4">
+                  <strong class="font-semibold text-royalViolet block mb-1">3. Statutory Deed &amp; Indemnity Review</strong>
+                  Explaining the legal obligations under the IPRS Deed of Assignment and Indemnity Bond in plain English prior to execution and dispatch.
+                </div>
+                <div class="bg-vellum border border-lilacBorder rounded-2xl p-4">
+                  <strong class="font-semibold text-orchid block mb-1">4. Work Notification &amp; Cue-Sheet Structuring</strong>
+                  Organizing catalogue metadata, co-writer percentage splits, and film or OTT cue sheets for accurate post-admission registration under your IPI Number.
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:col-span-4 bg-vellum border border-lilacBorder rounded-2xl p-6 sm:p-7 flex flex-col justify-between shadow-sm">
+              <div>
+                <span class="block text-[11px] font-semibold uppercase tracking-[0.16em] text-mauveTaupe mb-2">
+                  Initiate an Instruction
+                </span>
+                <h4 class="font-serif text-xl font-normal text-aubergine mb-3">
+                  Request IPRS Registration Assistance
+                </h4>
+                <p class="text-xs text-plumSlate leading-relaxed mb-6">
+                  Select your role (Lyricist, Composer, Dual Writer, or Publisher) and pre-fill an informational enquiry note for our chambers.
+                </p>
+              </div>
+              <a
+                href="#contact"
+                data-select-enquiry="II. IPRS Membership &amp; Royalty Registration Assistance"
+                class="w-full inline-flex items-center justify-center px-6 py-3.5 rounded-full bg-royalViolet text-white text-xs font-semibold uppercase tracking-[0.14em] hover:bg-aubergine transition-colors text-center shadow-sm"
+              >
+                Prepare IPRS Enquiry Note
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Section III: Release, Publication & Deployment Checklist -->
+    <section id="checklist" class="border-b border-lilacBorder scroll-mt-20">
+      <div class="max-w-6xl mx-auto px-5 sm:px-10 py-16 sm:py-24 lg:py-28">
+        <div class="max-w-3xl mb-12 reveal-on-scroll">
+          <div class="inline-flex items-center gap-2.5 px-3.5 py-1 rounded-full bg-wisteriaSoft mb-3">
+            <span class="inline-block w-2 h-2 rounded-full bg-royalViolet"></span>
+            <span class="text-[11px] font-semibold uppercase tracking-[0.18em] text-royalViolet">
+              Section III · Pre-Release Legal Audit
+            </span>
+          </div>
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-[42px] font-normal text-aubergine tracking-tight mb-4">
+            Before You <span class="italic text-royalViolet">Release, Publish, or Deploy</span>
+          </h2>
+          <p class="text-sm sm:text-base text-plumSlate leading-relaxed">
+            Select your creative or technical discipline below to review four foundational legal checkpoints under Indian law prior to launching a project or executing a contract.
+          </p>
+        </div>
+
+        <!-- Four Statutory Category Tabs -->
+        <div role="tablist" aria-label="Creative Discipline Category Selector" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 p-2 bg-vellum border border-lilacBorder rounded-2xl mb-8 reveal-on-scroll">
+          <button
+            id="tab-music"
+            type="button"
+            role="tab"
+            aria-selected="true"
+            aria-controls="panel-music"
+            data-checklist-tab="music"
+            class="text-left px-5 py-4 rounded-xl transition-all cursor-pointer bg-mulberry text-white shadow-sm"
+          >
+            <span class="block text-xs uppercase tracking-[0.13em] font-semibold">Music &amp; Audio</span>
+            <span data-tab-sub class="block text-xs text-white/85 mt-1">Musicians, Composers &amp; Producers</span>
+          </button>
+
+          <button
+            id="tab-visual"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="panel-visual"
+            data-checklist-tab="visual"
+            class="text-left px-5 py-4 rounded-xl transition-all cursor-pointer text-aubergine hover:bg-periwinkleSoft/60"
+          >
+            <span class="block text-xs uppercase tracking-[0.13em] font-semibold">Visual &amp; Fine Arts</span>
+            <span data-tab-sub class="block text-xs text-mauveTaupe mt-1">Painters, Artists &amp; Photographers</span>
+          </button>
+
+          <button
+            id="tab-lit-soft"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="panel-lit-soft"
+            data-checklist-tab="lit-soft"
+            class="text-left px-5 py-4 rounded-xl transition-all cursor-pointer text-aubergine hover:bg-wisteriaSoft/60"
+          >
+            <span class="block text-xs uppercase tracking-[0.13em] font-semibold">Literature &amp; Software</span>
+            <span data-tab-sub class="block text-xs text-mauveTaupe mt-1">Writers, Screenwriters &amp; Programmers</span>
+          </button>
+
+          <button
+            id="tab-film-anim"
+            type="button"
+            role="tab"
+            aria-selected="false"
+            aria-controls="panel-film-anim"
+            data-checklist-tab="film-anim"
+            class="text-left px-5 py-4 rounded-xl transition-all cursor-pointer text-aubergine hover:bg-orchidSoft/60"
+          >
+            <span class="block text-xs uppercase tracking-[0.13em] font-semibold">Film &amp; Animation</span>
+            <span data-tab-sub class="block text-xs text-mauveTaupe mt-1">Cinematographers &amp; Animators</span>
+          </button>
+        </div>
+
+        <!-- Panel 1: Music & Audio -->
+        <div id="panel-music" role="tabpanel" aria-labelledby="tab-music" data-checklist-panel="music" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="studio-card bg-vellum border border-lilacBorder rounded-2xl p-7 sm:p-9">
+            <span class="inline-block text-[10px] font-semibold uppercase tracking-[0.16em] text-mulberry bg-mulberrySoft px-3 py-1 rounded-full mb-3">
+              01 · Underlying Works vs. Master Recording
+            </span>
+            <h3 class="font-serif text-xl sm:text-2xl font-normal text-aubergine mb-3">
+              Separate Composition Rights from the Sound Recording
+            </h3>
+            <p class="text-sm text-plumSlate leading-relaxed">
+              Under the Copyright Act, 1957, a single recorded track contains three distinct legal assets: lyrics (literary work), musical score (musical work), and recorded audio (sound recording). Confirm written ownership across all three layers before uploading to a distributor.
+            </p>
+          </div>
+
+          <div class="studio-card bg-vellum border border-lilacBorder rounded-2xl p-7 sm:p-9">
+            <span class="inline-block text-[10px] font-semibold uppercase tracking-[0.16em] text-mulberry bg-mulberrySoft px-3 py-1 rounded-full mb-3">
+              02 · Co-Writer Split Sheets &amp; IPRS Readiness
+            </span>
+            <h3 class="font-serif text-xl sm:text-2xl font-normal text-aubergine mb-3">
+              Execute Split Sheets &amp; Register Works with IPRS
+            </h3>
+            <p class="text-sm text-plumSlate leading-relaxed">
+              Record songwriting percentages and master revenue shares in a signed split sheet at the close of studio sessions. Once released, register your membership and work notifications with IPRS so performing and mechanical royalties are collected alongside distributor master payouts.
+            </p>
+          </div>
+
+          <div class="studio-card bg-vellum border border-lilacBorder rounded-2xl p-7 sm:p-9">
+            <span class="inline-block text-[10px] font-semibold uppercase tracking-[0.16em] text-mulberry bg-mulberrySoft px-3 py-1 rounded-full mb-3">
+              03 · Stage Name &amp; Moniker Clearance
+            </span>
+            <h3 class="font-serif text-xl sm:text-2xl font-normal text-aubergine mb-3">
+              Clear Your Artist or Band Name Across Core Classes
+            </h3>
+            <p class="text-sm text-plumSlate leading-relaxed">
+              Before investing in branded merchandise or releasing a catalogue under a stage moniker, conduct a clearance search on the IP India registry across Class 9 (recorded media), Class 25 (apparel), and Class 41 (live performance and music production).
+            </p>
+          </div>
+
+          <div class="studio-card bg-vellum border border-lilacBorder rounded-2xl p-7 sm:p-9">
+            <span class="inline-block text-[10px] font-semibold uppercase tracking-[0.16em] text-mulberry bg-mulberrySoft px-3 py-1 rounded-full mb-3">
+              04 · Label &amp; Distribution Agreements
+            </span>
+            <h3 class="font-serif text-xl sm:text-2xl font-normal text-aubergine mb-3">
+              Distinguish Fixed-Term Licenses from Assignments
+            </h3>
+            <p class="text-sm text-plumSlate leading-relaxed">
+              Examine whether a proposed contract grants a time-bound distribution license or transfers permanent copyright ownership, and verify how recoupable advances, statutory author royalty shares under Section 18, and catalogue reversion clauses operate.
+            </p>
+          </div>
+        </div>
+
+        <!-- Panel 2: Visual & Fine Arts -->
+        <div id="panel-visual" role="tabpanel" aria-labelledby="tab-visual" data-checklist-panel="visual" class="hidden grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="studio-card bg-vellum border border-lilacBorder rounded-2xl p-7 sm:p-9">
+            <span class="inline-block text-[10px] font-semibold uppercase tracking-[0.16em] text-periwinkle bg-periwinkleSoft px-3 py-1 rounded-full mb-3">
+              01 · Section 17(b) Commissioned Defaults
+            </span>
+            <h3 class="font-serif text-xl sm:text-2xl font-normal text-aubergine mb-3">
+              Override Statutory Ownership Defaults in Commissions
+            </h3>
+            <p class="text-sm text-plumSlate leading-relaxed">
+              Under Section 17(b) of the Copyright Act, 1957, when a photograph is taken or a painting or portrait is created for valuable consideration at a client’s instance, the client becomes the first owner of copyright unless an explicit written contract states otherwise.
+            </p>
+          </div>
+
+          <div class="studio-card bg-vellum border border-lilacBorder rounded-2xl p-7 sm:p-9">
+            <span class="inline-block text-[10px] font-semibold uppercase tracking-[0.16em] text-periwinkle bg-periwinkleSoft px-3 py-1 rounded-full mb-3">
+              02 · Physical Object vs. Reproduction Rights
+            </span>
+            <h3 class="font-serif text-xl sm:text-2xl font-normal text-aubergine mb-3">
+              Separate Physical Artwork Sales from Usage Licenses
+            </h3>
+            <p class="text-sm text-plumSlate leading-relaxed">
+              Selling an original canvas or delivering high-resolution image files does not transfer copyright. Define in writing whether the buyer acquires display rights only, a bounded commercial usage license (by medium, term, and territory), or a full assignment.
+            </p>
+          </div>
+
+          <div class="studio-card bg-vellum border border-lilacBorder rounded-2xl p-7 sm:p-9">
+            <span class="inline-block text-[10px] font-semibold uppercase tracking-[0.16em] text-periwinkle bg-periwinkleSoft px-3 py-1 rounded-full mb-3">
+              03 · Section 57 Moral Rights
+            </span>
+            <h3 class="font-serif text-xl sm:text-2xl font-normal text-aubergine mb-3">
+              Safeguard Attribution and Integrity Across Media
+            </h3>
+            <p class="text-sm text-plumSlate leading-relaxed">
+              Even where economic copyright is licensed or assigned, painters, illustrators, and photographers retain statutory moral rights under Section 57 to claim authorship and restrain unauthorized cropping, distortion, or modification prejudicial to their reputation.
+            </p>
+          </div>
+
+          <div class="studio-card bg-vellum border border-lilacBorder rounded-2xl p-7 sm:p-9">
+            <span class="inline-block text-[10px] font-semibold uppercase tracking-[0.16em] text-periwinkle bg-periwinkleSoft px-3 py-1 rounded-full mb-3">
+              04 · Releases &amp; Source Deliverables
+            </span>
+            <h3 class="font-serif text-xl sm:text-2xl font-normal text-aubergine mb-3">
+              Secure Model Releases and Scope Editable Source Files
+            </h3>
+            <p class="text-sm text-plumSlate leading-relaxed">
+              For commercial shoots and brand campaigns, obtain signed model and property releases, define included revision rounds, and license editable layered design files or merchandise reproduction under a separate commercial fee tier.
+            </p>
+          </div>
+        </div>
+
+        <!-- Panel 3: Literature & Software -->
+        <div id="panel-lit-soft" role="tabpanel" aria-labelledby="tab-lit-soft" data-checklist-panel="lit-soft" class="hidden grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="studio-card bg-vellum border border-lilacBorder rounded-2xl p-7 sm:p-9">
+            <span class="inline-block text-[10px] font-semibold uppercase tracking-[0.16em] text-royalViolet bg-wisteriaSoft px-3 py-1 rounded-full mb-3">
+              01 · Section 2(o) Literary Classification
+            </span>
+            <h3 class="font-serif text-xl sm:text-2xl font-normal text-aubergine mb-3">
+              Protect Manuscripts and Source Code as Literary Works
+            </h3>
+            <p class="text-sm text-plumSlate leading-relaxed">
+              Under Section 2(o) of the Copyright Act, 1957, books, screenplays, and computer programs (source code, object code, and databases) are protected as Literary Works. Because computer programs per se are excluded from patentability under Section 3(k) of the Patents Act, 1970, copyright and contracts carry primary legal weight.
+            </p>
+          </div>
+
+          <div class="studio-card bg-vellum border border-lilacBorder rounded-2xl p-7 sm:p-9">
+            <span class="inline-block text-[10px] font-semibold uppercase tracking-[0.16em] text-royalViolet bg-wisteriaSoft px-3 py-1 rounded-full mb-3">
+              02 · Employment vs. Independent Contractor IP
+            </span>
+            <h3 class="font-serif text-xl sm:text-2xl font-normal text-aubergine mb-3">
+              Audit Freelance Code and Ghostwriting Assignments
+            </h3>
+            <p class="text-sm text-plumSlate leading-relaxed">
+              Works created under a contract of employment vest in the employer under Section 17(c), whereas code or writing produced by an independent contractor remains owned by the creator unless transferred by a written assignment specifying duration and territory under Section 19.
+            </p>
+          </div>
+
+          <div class="studio-card bg-vellum border border-lilacBorder rounded-2xl p-7 sm:p-9">
+            <span class="inline-block text-[10px] font-semibold uppercase tracking-[0.16em] text-royalViolet bg-wisteriaSoft px-3 py-1 rounded-full mb-3">
+              03 · Subsidiary Rights &amp; Open-Source Dependencies
+            </span>
+            <h3 class="font-serif text-xl sm:text-2xl font-normal text-aubergine mb-3">
+              Carve Out Adaptations and Audit Third-Party Packages
+            </h3>
+            <p class="text-sm text-plumSlate leading-relaxed">
+              Authors should expressly retain or separately value translation, audiobook, and screen adaptation rights in publishing agreements. Software developers should audit third-party open-source libraries (copyleft GPL versus permissive MIT or Apache licenses) before commercial deployment.
+            </p>
+          </div>
+
+          <div class="studio-card bg-vellum border border-lilacBorder rounded-2xl p-7 sm:p-9">
+            <span class="inline-block text-[10px] font-semibold uppercase tracking-[0.16em] text-royalViolet bg-wisteriaSoft px-3 py-1 rounded-full mb-3">
+              04 · Product, SaaS &amp; Imprint Trademarks
+            </span>
+            <h3 class="font-serif text-xl sm:text-2xl font-normal text-aubergine mb-3">
+              Clear Application Names, SaaS Brands &amp; Series Titles
+            </h3>
+            <p class="text-sm text-plumSlate leading-relaxed">
+              Copyright protects concrete expression rather than standalone titles or underlying functional concepts. Conduct trademark clearance searches across Classes 9 and 42 (for software and SaaS products) or Classes 16 and 41 (for publications and imprints) prior to launch.
+            </p>
+          </div>
+        </div>
+
+        <!-- Panel 4: Film & Animation -->
+        <div id="panel-film-anim" role="tabpanel" aria-labelledby="tab-film-anim" data-checklist-panel="film-anim" class="hidden grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="studio-card bg-vellum border border-lilacBorder rounded-2xl p-7 sm:p-9">
+            <span class="inline-block text-[10px] font-semibold uppercase tracking-[0.16em] text-orchid bg-orchidSoft px-3 py-1 rounded-full mb-3">
+              01 · Cinematograph Film vs. Underlying Art
+            </span>
+            <h3 class="font-serif text-xl sm:text-2xl font-normal text-aubergine mb-3">
+              Separate Film Rights from Character and Concept Art
+            </h3>
+            <p class="text-sm text-plumSlate leading-relaxed">
+              Under Section 2(f) of the Copyright Act, 1957, live-action motion pictures and animated sequences are protected as Cinematograph Films, while character sheets, storyboards, background paintings, and 3D models qualify independently as Artistic Works under Section 2(c).
+            </p>
+          </div>
+
+          <div class="studio-card bg-vellum border border-lilacBorder rounded-2xl p-7 sm:p-9">
+            <span class="inline-block text-[10px] font-semibold uppercase tracking-[0.16em] text-orchid bg-orchidSoft px-3 py-1 rounded-full mb-3">
+              02 · Producer, Cinematographer &amp; Animator Terms
+            </span>
+            <h3 class="font-serif text-xl sm:text-2xl font-normal text-aubergine mb-3">
+              Define Crew Ownership, Showreel &amp; Project File Rights
+            </h3>
+            <p class="text-sm text-plumSlate leading-relaxed">
+              Under Section 2(d)(v), the producer is recognized as the statutory author of a cinematograph film. Cinematographers and animators should record written terms governing portfolio showreel usage, custody of raw footage or working files, and reuse of proprietary rigs or shaders.
+            </p>
+          </div>
+
+          <div class="studio-card bg-vellum border border-lilacBorder rounded-2xl p-7 sm:p-9">
+            <span class="inline-block text-[10px] font-semibold uppercase tracking-[0.16em] text-orchid bg-orchidSoft px-3 py-1 rounded-full mb-3">
+              03 · Chain-of-Title Documentation
+            </span>
+            <h3 class="font-serif text-xl sm:text-2xl font-normal text-aubergine mb-3">
+              Compile Clearances Ahead of Festival &amp; OTT Delivery
+            </h3>
+            <p class="text-sm text-plumSlate leading-relaxed">
+              Prior to submitting a film or animated work to festivals, broadcasters, or streaming platforms, assemble signed NOCs and synchronization or master licenses covering music cues, IPRS cue sheets, stock assets, underlying scripts, voiceover talent, and location releases.
+            </p>
+          </div>
+
+          <div class="studio-card bg-vellum border border-lilacBorder rounded-2xl p-7 sm:p-9">
+            <span class="inline-block text-[10px] font-semibold uppercase tracking-[0.16em] text-orchid bg-orchidSoft px-3 py-1 rounded-full mb-3">
+              04 · Character &amp; Production Banner Marks
+            </span>
+            <h3 class="font-serif text-xl sm:text-2xl font-normal text-aubergine mb-3">
+              Register Original Animated Characters &amp; Studio Names
+            </h3>
+            <p class="text-sm text-plumSlate leading-relaxed">
+              Where original animated properties or production studios contemplate merchandise, games, or derivative series, register studio names and distinctive character names or logos across Classes 9, 25, 28, and 41 on the IP India registry.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section IV: About the Practice -->
+    <section id="about" class="border-b border-lilacBorder bg-vellum scroll-mt-20">
+      <div class="max-w-6xl mx-auto px-5 sm:px-10 py-16 sm:py-24 lg:py-28">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+
+          <!-- Left Column: Practitioner Narrative -->
+          <div class="lg:col-span-7 reveal-on-scroll">
+            <div class="inline-flex items-center gap-2.5 px-3.5 py-1 rounded-full bg-lilacWash mb-3">
+              <span class="inline-block w-2 h-2 rounded-full bg-iris"></span>
+              <span class="text-[11px] font-semibold uppercase tracking-[0.18em] text-royalViolet">
+                Section IV · About the Practice
+              </span>
+            </div>
+            <h2 class="font-serif text-3xl sm:text-4xl lg:text-[42px] font-normal text-aubergine tracking-tight mb-7">
+              Legal Counsel Grounded in <span class="italic text-royalViolet">Creative Practice</span>
+            </h2>
+            <div class="space-y-5 text-sm sm:text-[15px] text-plumSlate leading-[1.8]">
+              <p>
+                <strong class="font-semibold text-aubergine">IP for Artists</strong> is the Intellectual Property practice of <strong class="font-semibold text-aubergine">Roshni Ghosh</strong>, an Advocate enrolled with the Bar Council of West Bengal, advising musicians, painters, visual artists, photographers, writers, software developers, cinematographers, and animators across India.
+              </p>
+              <p>
+                Having worked within the music industry as a performing musician prior to and alongside legal practice, her advisory work reflects practical familiarity with studio sessions, collaborative splits, IPRS royalty administration, independent releases, and digital production pipelines. Every instruction prioritizes preventive documentation, clean chain-of-title records, and plain-English explanations of statutory rights so clients understand exactly what they own and what they sign.
+              </p>
+              <p>
+                The practice assists independent creators, studios, and technology builders with copyright and trademark registrations, IPRS membership readiness, and drafting or reviewing contracts for commissions, software development, sound recordings, publishing, and film or animation productions.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right Column: Clean Practitioner Record -->
+          <div class="lg:col-span-5 reveal-on-scroll">
+            <div class="bg-lavenderMist border border-lilacBorder rounded-3xl p-7 sm:p-9 shadow-sm">
+              <div class="flex items-center justify-between pb-4 border-b border-lilacBorder mb-2">
+                <h3 class="font-serif text-xl font-normal text-aubergine">
+                  Practitioner Record
+                </h3>
+                <span class="text-[10px] font-semibold uppercase tracking-[0.16em] text-royalViolet bg-petalTint px-3 py-1 rounded-full">
+                  Bar Roll Particulars
+                </span>
+              </div>
+
+              <dl class="divide-y divide-lilacBorder text-sm">
+                <div class="py-4">
+                  <dt class="text-[11px] uppercase tracking-[0.15em] text-mauveTaupe">Advocate</dt>
+                  <dd class="font-semibold text-aubergine mt-1">Roshni Ghosh</dd>
+                </div>
+                <div class="py-4">
+                  <dt class="text-[11px] uppercase tracking-[0.15em] text-mauveTaupe">Area of Practice</dt>
+                  <dd class="font-medium text-aubergine mt-1">Intellectual Property Law (Copyright, IPRS Royalties, Trademarks &amp; Creative Contracts)</dd>
+                </div>
+                <div class="py-4">
+                  <dt class="text-[11px] uppercase tracking-[0.15em] text-mauveTaupe">Bar Enrolment</dt>
+                  <dd class="font-medium text-aubergine mt-1 tabular-nums">Bar Council of West Bengal · F/3821/2024</dd>
+                </div>
+                <div class="py-4">
+                  <dt class="text-[11px] uppercase tracking-[0.15em] text-mauveTaupe">Base of Practice</dt>
+                  <dd class="font-medium text-aubergine mt-1">Kolkata, West Bengal, India</dd>
+                </div>
+              </dl>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Section V: Chamber & Enquiry -->
+    <section id="contact" class="bg-lavenderMist scroll-mt-20">
+      <div class="max-w-6xl mx-auto px-5 sm:px-10 py-16 sm:py-24 lg:py-28">
+        <div class="max-w-3xl mb-14 reveal-on-scroll">
+          <div class="inline-flex items-center gap-2.5 px-3.5 py-1 rounded-full bg-mulberrySoft mb-3">
+            <span class="inline-block w-2 h-2 rounded-full bg-mulberry"></span>
+            <span class="text-[11px] font-semibold uppercase tracking-[0.18em] text-mulberry">
+              Section V · Chamber &amp; Enquiry
+            </span>
+          </div>
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-[42px] font-normal text-aubergine tracking-tight mb-4">
+            Chamber Particulars &amp; <span class="italic text-royalViolet">Enquiry Note Builder</span>
+          </h2>
+          <p class="text-sm sm:text-base text-plumSlate leading-relaxed">
+            Consultations are scheduled by prior appointment following a conflict-of-interest check. Prepare a structured informational note below to copy and transmit by electronic mail.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start reveal-on-scroll">
+
+          <!-- Left Column: Chamber Details -->
+          <div class="lg:col-span-5 space-y-6">
+            <div class="bg-vellum border border-lilacBorder rounded-3xl p-7 sm:p-9 divide-y divide-lilacBorder text-sm shadow-sm">
+              <div class="pb-5">
+                <span class="block text-[11px] uppercase tracking-[0.15em] text-mauveTaupe mb-1.5">Chamber Location</span>
+                <p class="font-semibold text-aubergine leading-relaxed">
+                  Kolkata, West Bengal, India
+                </p>
+                <p class="text-plumSlate mt-0.5">
+                  In-person consultations in Kolkata &amp; remote consultations across India
+                </p>
+              </div>
+
+              <div class="py-5">
+                <span class="block text-[11px] uppercase tracking-[0.15em] text-mauveTaupe mb-1.5">Electronic Mail</span>
+                <p class="font-medium text-royalViolet break-all">
+                  advroshnighosh@gmail.com
+                </p>
+              </div>
+
+              <div class="py-5">
+                <span class="block text-[11px] uppercase tracking-[0.15em] text-mauveTaupe mb-1.5">Telephone</span>
+                <p class="font-medium text-aubergine tabular-nums">
+                  +91 7595997883
+                </p>
+              </div>
+
+              <div class="pt-5">
+                <span class="block text-[11px] uppercase tracking-[0.15em] text-mauveTaupe mb-1.5">Chamber Hours</span>
+                <p class="font-semibold text-aubergine">
+                  Monday to Friday · 10:30 AM to 6:30 PM IST
+                </p>
+                <p class="text-xs text-mauveTaupe mt-1">
+                  Consultations strictly by prior appointment.
+                </p>
+              </div>
+            </div>
+
+            <div class="p-6 rounded-2xl bg-lilacWash border border-iris/30 text-xs text-plumSlate leading-relaxed">
+              <strong class="font-semibold text-royalViolet uppercase tracking-[0.1em] block mb-1">Confidentiality Protocol</strong>
+              Please refrain from transmitting unpublished manuscripts, source code, unreleased master audio, or confidential agreements in an initial enquiry until conflict clearance is confirmed in writing.
+            </div>
+          </div>
+
+          <!-- Right Column: Structured Enquiry Note Builder -->
+          <div class="lg:col-span-7 bg-vellum border border-lilacBorder rounded-3xl p-7 sm:p-10 shadow-sm">
+            <h3 class="font-serif text-2xl font-normal text-aubergine mb-2">
+              Prepare an Enquiry Note
+            </h3>
+            <p class="text-xs sm:text-sm text-plumSlate mb-7 leading-relaxed">
+              Select the relevant practice area and your discipline to format a clear, structured note ready to copy and send to <span class="font-medium text-royalViolet">advroshnighosh@gmail.com</span>.
+            </p>
+
+            <div class="space-y-5">
+              <div>
+                <label for="enquiry-area" class="block text-[11px] font-semibold uppercase tracking-[0.15em] text-aubergine mb-2">
+                  Practice Area
+                </label>
+                <select
+                  id="enquiry-area"
+                  class="w-full px-4 py-3 rounded-xl bg-lavenderMist border border-lilacBorder text-sm text-aubergine focus:outline-none focus:border-royalViolet"
+                >
+                  <option value="I. Copyright Registration &amp; Ownership Advisory">I. Copyright Registration &amp; Ownership Advisory</option>
+                  <option value="II. IPRS Membership &amp; Royalty Registration Assistance">II. IPRS Membership &amp; Royalty Registration Assistance</option>
+                  <option value="III. Artist, Studio, Publication &amp; Software Trademarks">III. Artist, Studio, Publication &amp; Software Trademarks</option>
+                  <option value="IV. Contract Drafting &amp; Clause-by-Clause Review">IV. Contract Drafting &amp; Clause-by-Clause Review</option>
+                </select>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div>
+                  <label for="enquiry-name" class="block text-[11px] font-semibold uppercase tracking-[0.15em] text-aubergine mb-2">
+                    Name / Moniker / Studio
+                  </label>
+                  <input
+                    id="enquiry-name"
+                    type="text"
+                    placeholder="e.g., Aarav Sen"
+                    class="w-full px-4 py-3 rounded-xl bg-lavenderMist border border-lilacBorder text-sm text-aubergine placeholder:text-mauveTaupe/60 focus:outline-none focus:border-royalViolet"
+                  />
+                </div>
+
+                <div>
+                  <label for="enquiry-role" class="block text-[11px] font-semibold uppercase tracking-[0.15em] text-aubergine mb-2">
+                    Category &amp; Discipline
+                  </label>
+                  <select
+                    id="enquiry-role"
+                    class="w-full px-4 py-3 rounded-xl bg-lavenderMist border border-lilacBorder text-sm text-aubergine focus:outline-none focus:border-royalViolet"
+                  >
+                    <option value="Music &amp; Audio: Lyricist / Composer / Musician">Music &amp; Audio: Lyricist / Composer / Musician</option>
+                    <option value="Music &amp; Audio: Music Publisher / Label">Music &amp; Audio: Music Publisher / Label</option>
+                    <option value="Visual &amp; Fine Arts: Painter / Visual Artist">Visual &amp; Fine Arts: Painter / Visual Artist</option>
+                    <option value="Visual &amp; Fine Arts: Photographer">Visual &amp; Fine Arts: Photographer</option>
+                    <option value="Literature &amp; Software: Writer / Screenwriter">Literature &amp; Software: Writer / Screenwriter</option>
+                    <option value="Literature &amp; Software: Programmer / Developer">Literature &amp; Software: Programmer / Developer</option>
+                    <option value="Film &amp; Animation: Cinematographer">Film &amp; Animation: Cinematographer</option>
+                    <option value="Film &amp; Animation: Animator">Film &amp; Animation: Animator</option>
+                    <option value="Other Creative Practitioner">Other Creative Practitioner</option>
+                  </select>
+                </div>
+              </div>
+
+              <div>
+                <label for="enquiry-context" class="block text-[11px] font-semibold uppercase tracking-[0.15em] text-aubergine mb-2">
+                  Brief Factual Context
+                </label>
+                <textarea
+                  id="enquiry-context"
+                  rows="3"
+                  placeholder="e.g., Seeking IPRS registration readiness review for released compositions and split-sheet verification."
+                  class="w-full px-4 py-3 rounded-xl bg-lavenderMist border border-lilacBorder text-sm text-aubergine placeholder:text-mauveTaupe/60 focus:outline-none focus:border-royalViolet"
+                ></textarea>
+              </div>
+
+              <!-- Live Formatted Note Preview -->
+              <div class="pt-1">
+                <span class="block text-[11px] font-semibold uppercase tracking-[0.15em] text-mauveTaupe mb-2">
+                  Formatted Enquiry Preview
+                </span>
+                <pre
+                  id="enquiry-preview"
+                  class="w-full p-5 rounded-2xl bg-lavenderMist border border-lilacBorder text-xs text-aubergine font-sans whitespace-pre-wrap leading-relaxed"
+                ></pre>
+              </div>
+
+              <!-- Actions -->
+              <div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5">
+                <button
+                  id="copy-enquiry-btn"
+                  type="button"
+                  class="inline-flex items-center justify-center px-7 py-3.5 rounded-full bg-royalViolet text-white text-xs font-semibold uppercase tracking-[0.14em] hover:bg-aubergine transition-colors shadow-sm cursor-pointer"
+                >
+                  Copy Enquiry Note
+                </button>
+                <a
+                  id="mailto-enquiry-link"
+                  href="mailto:advroshnighosh@gmail.com"
+                  class="inline-flex items-center justify-center px-7 py-3.5 rounded-full bg-vellum border border-lilacBorder text-aubergine text-xs font-semibold uppercase tracking-[0.14em] hover:border-royalViolet hover:text-royalViolet transition-colors"
+                >
+                  Open in Email Client
+                </a>
+              </div>
+
+              <!-- Inline Feedback Banner -->
+              <p id="copy-feedback" role="status" aria-live="polite" class="hidden text-xs font-medium text-royalViolet pt-1">
+                Enquiry note copied to clipboard.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Editorial Footer with Copyright-Free Stock Photography Notice -->
+  <footer class="border-t border-lilacBorder bg-vellum">
+    <div class="max-w-6xl mx-auto px-5 sm:px-10 py-12 space-y-6">
+      <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 text-xs text-mauveTaupe">
+        <div class="space-y-1.5">
+          <p class="font-serif text-lg text-aubergine">
+            IP <span class="italic text-royalViolet">for</span> Artists <span class="font-sans text-xs text-mauveTaupe ml-1">· Roshni Ghosh, Advocate &amp; IP Consultant</span>
+          </p>
+          <p class="text-[11px] uppercase tracking-[0.14em] tabular-nums">
+            Bar Council of West Bengal (F/3821/2024) · Kolkata, India
+          </p>
+        </div>
+
+        <div class="flex items-center gap-7 text-[11px] font-semibold uppercase tracking-[0.14em] text-aubergine">
+          <button
+            id="reopen-bci-btn"
+            type="button"
+            class="underline underline-offset-4 decoration-royalViolet hover:text-royalViolet transition-colors cursor-pointer"
+          >
+            BCI Rule 36 Disclaimer
+          </button>
+          <a href="#top" class="hover:text-royalViolet transition-colors">
+            Back to Top ↑
+          </a>
+        </div>
+      </div>
+
+      <div class="pt-5 border-t border-lilacBorder text-[11px] text-mauveTaupe leading-relaxed">
+        <strong class="font-semibold text-aubergine">Copyright-Free Stock Photography Notice:</strong> All photographs featured in the creative disciplines carousel on this website are licensed under permissive, royalty-free stock licenses (Unsplash License and Pexels License) permitting free commercial and informational use without copyright infringement.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Client-Side Interactive Logic -->
+  <script>
+    (function () {
+      'use strict';
+
+      // 1. Reading Progress Bar & Scroll Reveal Observer
+      const progressBar = document.getElementById('reading-progress');
+      function updateReadingProgress() {
+        if (!progressBar) return;
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
+        const docHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const progress = docHeight > 0 ? Math.min(1, Math.max(0, scrollTop / docHeight)) : 0;
+        progressBar.style.transform = 'scaleX(' + progress + ')';
+      }
+      window.addEventListener('scroll', updateReadingProgress, { passive: true });
+      updateReadingProgress();
+
+      const revealElements = document.querySelectorAll('.reveal-on-scroll');
+      if ('IntersectionObserver' in window) {
+        const revealObserver = new IntersectionObserver(
+          function (entries, observer) {
+            entries.forEach(function (entry) {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                observer.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.08 }
+        );
+        revealElements.forEach(function (el) {
+          revealObserver.observe(el);
+        });
+      } else {
+        revealElements.forEach(function (el) {
+          el.classList.add('is-visible');
+        });
+      }
+
+      // 2. Copyright-Free Stock Photography Carousel Logic
+      const carouselRoot = document.getElementById('studio-carousel');
+      const carouselTrack = document.getElementById('carousel-track');
+      const carouselCounter = document.getElementById('carousel-counter');
+      const carouselPrev = document.getElementById('carousel-prev');
+      const carouselNext = document.getElementById('carousel-next');
+      const carouselDots = document.querySelectorAll('[data-carousel-dot]');
+      const carouselCta = document.getElementById('carousel-checklist-cta');
+
+      const slideMeta = [
+        {
+          key: 'music',
+          ctaText: 'Inspect Music & Audio Checklist →',
+          dotColor: 'bg-mulberry'
+        },
+        {
+          key: 'visual',
+          ctaText: 'Inspect Visual & Fine Arts Checklist →',
+          dotColor: 'bg-periwinkle'
+        },
+        {
+          key: 'lit-soft',
+          ctaText: 'Inspect Literature & Software Checklist →',
+          dotColor: 'bg-royalViolet'
+        },
+        {
+          key: 'film-anim',
+          ctaText: 'Inspect Film & Animation Checklist →',
+          dotColor: 'bg-orchid'
+        }
+      ];
+
+      let currentSlide = 0;
+      const totalSlides = slideMeta.length;
+      let autoAdvanceTimer = null;
+
+      function goToSlide(index) {
+        currentSlide = ((index % totalSlides) + totalSlides) % totalSlides;
+        if (carouselTrack) {
+          carouselTrack.style.transform = 'translateX(-' + currentSlide * 100 + '%)';
+        }
+        if (carouselCounter) {
+          carouselCounter.textContent = '0' + (currentSlide + 1) + ' / 0' + totalSlides;
+        }
+
+        const activeInfo = slideMeta[currentSlide];
+        carouselDots.forEach(function (dot, idx) {
+          dot.classList.remove('w-8', 'w-2.5', 'bg-mulberry', 'bg-periwinkle', 'bg-royalViolet', 'bg-orchid', 'bg-lilacBorder');
+          if (idx === currentSlide) {
+            dot.setAttribute('aria-selected', 'true');
+            dot.classList.add('w-8', activeInfo.dotColor);
+          } else {
+            dot.setAttribute('aria-selected', 'false');
+            dot.classList.add('w-2.5', 'bg-lilacBorder');
+          }
+        });
+
+        if (carouselCta && activeInfo) {
+          carouselCta.textContent = activeInfo.ctaText;
+          carouselCta.setAttribute('data-jump-category', activeInfo.key);
+        }
+      }
+
+      function startCarouselAutoplay() {
+        stopCarouselAutoplay();
+        if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+          return;
+        }
+        autoAdvanceTimer = setInterval(function () {
+          goToSlide(currentSlide + 1);
+        }, 5500);
+      }
+
+      function stopCarouselAutoplay() {
+        if (autoAdvanceTimer) {
+          clearInterval(autoAdvanceTimer);
+          autoAdvanceTimer = null;
+        }
+      }
+
+      if (carouselPrev) {
+        carouselPrev.addEventListener('click', function () {
+          goToSlide(currentSlide - 1);
+          startCarouselAutoplay();
+        });
+      }
+
+      if (carouselNext) {
+        carouselNext.addEventListener('click', function () {
+          goToSlide(currentSlide + 1);
+          startCarouselAutoplay();
+        });
+      }
+
+      carouselDots.forEach(function (dot) {
+        dot.addEventListener('click', function () {
+          const targetIdx = parseInt(dot.getAttribute('data-carousel-dot'), 10);
+          if (!isNaN(targetIdx)) {
+            goToSlide(targetIdx);
+            startCarouselAutoplay();
+          }
+        });
+      });
+
+      if (carouselRoot) {
+        carouselRoot.addEventListener('mouseenter', stopCarouselAutoplay);
+        carouselRoot.addEventListener('mouseleave', startCarouselAutoplay);
+        carouselRoot.addEventListener('focusin', stopCarouselAutoplay);
+        carouselRoot.addEventListener('focusout', startCarouselAutoplay);
+
+        carouselRoot.addEventListener('keydown', function (e) {
+          if (e.key === 'ArrowLeft') {
+            e.preventDefault();
+            goToSlide(currentSlide - 1);
+          } else if (e.key === 'ArrowRight') {
+            e.preventDefault();
+            goToSlide(currentSlide + 1);
+          }
+        });
+
+        // Touch swipe support for mobile/tablet
+        let touchStartX = 0;
+        carouselRoot.addEventListener(
+          'touchstart',
+          function (e) {
+            if (e.touches && e.touches.length > 0) {
+              touchStartX = e.touches[0].clientX;
+              stopCarouselAutoplay();
+            }
+          },
+          { passive: true }
+        );
+        carouselRoot.addEventListener(
+          'touchend',
+          function (e) {
+            if (e.changedTouches && e.changedTouches.length > 0) {
+              const deltaX = e.changedTouches[0].clientX - touchStartX;
+              if (Math.abs(deltaX) > 40) {
+                if (deltaX < 0) {
+                  goToSlide(currentSlide + 1);
+                } else {
+                  goToSlide(currentSlide - 1);
+                }
+              }
+              startCarouselAutoplay();
+            }
+          },
+          { passive: true }
+        );
+      }
+
+      goToSlide(0);
+      startCarouselAutoplay();
+
+      // 3. BCI Rule 36 Disclaimer Modal Logic
+      const bciModal = document.getElementById('bci-modal');
+      const acknowledgeBtn = document.getElementById('bci-acknowledge-btn');
+      const reopenBciBtn = document.getElementById('reopen-bci-btn');
+      const STORAGE_KEY = 'ip_for_artists_bci_ack_v1';
+
+      function hideBciModal() {
+        if (!bciModal) return;
+        bciModal.classList.add('hidden');
+        document.body.classList.remove('overflow-hidden');
+      }
+
+      function showBciModal() {
+        if (!bciModal) return;
+        bciModal.classList.remove('hidden');
+        document.body.classList.add('overflow-hidden');
+        if (acknowledgeBtn) {
+          acknowledgeBtn.focus();
+        }
+      }
+
+      try {
+        if (sessionStorage.getItem(STORAGE_KEY) === 'true') {
+          hideBciModal();
+        } else {
+          showBciModal();
+        }
+      } catch (e) {
+        showBciModal();
+      }
+
+      if (acknowledgeBtn) {
+        acknowledgeBtn.addEventListener('click', function () {
+          try {
+            sessionStorage.setItem(STORAGE_KEY, 'true');
+          } catch (e) {
+            // Ignore storage errors in restricted contexts
+          }
+          hideBciModal();
+        });
+      }
+
+      if (reopenBciBtn) {
+        reopenBciBtn.addEventListener('click', function () {
+          showBciModal();
+        });
+      }
+
+      // 4. Mobile Navigation Drawer
+      const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+      if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', function () {
+          const isHidden = mobileMenu.classList.contains('hidden');
+          if (isHidden) {
+            mobileMenu.classList.remove('hidden');
+            mobileMenuBtn.setAttribute('aria-expanded', 'true');
+            mobileMenuBtn.textContent = 'Close';
+          } else {
+            mobileMenu.classList.add('hidden');
+            mobileMenuBtn.setAttribute('aria-expanded', 'false');
+            mobileMenuBtn.textContent = 'Menu';
+          }
+        });
+
+        mobileNavLinks.forEach(function (link) {
+          link.addEventListener('click', function () {
+            mobileMenu.classList.add('hidden');
+            mobileMenuBtn.setAttribute('aria-expanded', 'false');
+            mobileMenuBtn.textContent = 'Menu';
+          });
+        });
+      }
+
+      // 5. Practice Areas Expandable Dossiers
+      const accordionTriggers = document.querySelectorAll('[data-accordion-trigger]');
+      accordionTriggers.forEach(function (trigger) {
+        trigger.addEventListener('click', function () {
+          const panelId = trigger.getAttribute('data-accordion-trigger');
+          const panel = document.getElementById(panelId);
+          const indicator = trigger.querySelector('[data-accordion-indicator]');
+          if (!panel) return;
+
+          const isExpanded = trigger.getAttribute('aria-expanded') === 'true';
+          if (isExpanded) {
+            trigger.setAttribute('aria-expanded', 'false');
+            panel.classList.add('hidden');
+            if (indicator) indicator.textContent = 'View Scope';
+          } else {
+            trigger.setAttribute('aria-expanded', 'true');
+            panel.classList.remove('hidden');
+            if (indicator) indicator.textContent = 'Collapse';
+          }
+        });
+      });
+
+      // 6. Release Checklist Tabs + Hero Discipline Ledger Sync (Violet Shades)
+      const checklistTabs = document.querySelectorAll('[data-checklist-tab]');
+      const checklistPanels = document.querySelectorAll('[data-checklist-panel]');
+      const jumpCards = document.querySelectorAll('[data-jump-category]');
+
+      const tabBgMap = {
+        'music': 'bg-mulberry',
+        'visual': 'bg-periwinkle',
+        'lit-soft': 'bg-royalViolet',
+        'film-anim': 'bg-orchid'
+      };
+
+      function activateChecklistTab(selectedKey) {
+        checklistTabs.forEach(function (tab) {
+          const key = tab.getAttribute('data-checklist-tab');
+          const subLabel = tab.querySelector('[data-tab-sub]');
+          const isSelected = key === selectedKey;
+
+          tab.setAttribute('aria-selected', isSelected ? 'true' : 'false');
+          tab.classList.remove('bg-mulberry', 'bg-periwinkle', 'bg-royalViolet', 'bg-orchid');
+
+          if (isSelected) {
+            tab.classList.add(tabBgMap[key] || 'bg-royalViolet', 'text-white', 'shadow-sm');
+            tab.classList.remove('text-aubergine');
+            if (subLabel) {
+              subLabel.classList.add('text-white/85');
+              subLabel.classList.remove('text-mauveTaupe');
+            }
+          } else {
+            tab.classList.remove('text-white', 'shadow-sm');
+            tab.classList.add('text-aubergine');
+            if (subLabel) {
+              subLabel.classList.remove('text-white/85');
+              subLabel.classList.add('text-mauveTaupe');
+            }
+          }
+        });
+
+        checklistPanels.forEach(function (panel) {
+          const panelKey = panel.getAttribute('data-checklist-panel');
+          if (panelKey === selectedKey) {
+            panel.classList.remove('hidden');
+          } else {
+            panel.classList.add('hidden');
+          }
+        });
+      }
+
+      checklistTabs.forEach(function (tab) {
+        tab.addEventListener('click', function () {
+          const key = tab.getAttribute('data-checklist-tab');
+          if (key) {
+            activateChecklistTab(key);
+          }
+        });
+      });
+
+      jumpCards.forEach(function (card) {
+        card.addEventListener('click', function () {
+          const key = card.getAttribute('data-jump-category');
+          if (key) {
+            activateChecklistTab(key);
+          }
+        });
+      });
+
+      // 7. Structured Enquiry Note Builder + Direct IPRS Pre-Selection
+      const areaSelect = document.getElementById('enquiry-area');
+      const nameInput = document.getElementById('enquiry-name');
+      const roleSelect = document.getElementById('enquiry-role');
+      const contextInput = document.getElementById('enquiry-context');
+      const previewBox = document.getElementById('enquiry-preview');
+      const copyBtn = document.getElementById('copy-enquiry-btn');
+      const mailtoLink = document.getElementById('mailto-enquiry-link');
+      const copyFeedback = document.getElementById('copy-feedback');
+      const selectEnquiryTriggers = document.querySelectorAll('[data-select-enquiry]');
+
+      function buildEnquiryData() {
+        const area = areaSelect ? areaSelect.value : 'I. Copyright Registration & Ownership Advisory';
+        const name = nameInput && nameInput.value.trim() ? nameInput.value.trim() : '[Your Name / Moniker / Studio]';
+        const role = roleSelect ? roleSelect.value : 'Music & Audio: Lyricist / Composer / Musician';
+        const context = contextInput && contextInput.value.trim()
+          ? contextInput.value.trim()
+          : '[Brief summary of your copyright, IPRS registration, trademark, or contract query]';
+
+        const subject = 'Informational Enquiry | ' + area;
+        const body =
+          'To: Roshni Ghosh, Advocate & IP Consultant (IP for Artists)\n' +
+          'Subject: ' + subject + '\n\n' +
+          'Name / Moniker / Studio: ' + name + '\n' +
+          'Category & Discipline: ' + role + '\n' +
+          'Practice Area: ' + area + '\n\n' +
+          'Brief Factual Context:\n' + context + '\n\n' +
+          'Submitted of my own accord for an initial conflict-of-interest check and consultation request.';
+
+        return { subject: subject, body: body };
+      }
+
+      function updateEnquiryOutputs() {
+        const data = buildEnquiryData();
+        if (previewBox) {
+          previewBox.textContent = data.body;
+        }
+        if (mailtoLink) {
+          mailtoLink.setAttribute(
+            'href',
+            'mailto:advroshnighosh@gmail.com?subject=' +
+              encodeURIComponent(data.subject) +
+              '&body=' +
+              encodeURIComponent(data.body)
+          );
+        }
+      }
+
+      [areaSelect, nameInput, roleSelect, contextInput].forEach(function (el) {
+        if (el) {
+          el.addEventListener('input', updateEnquiryOutputs);
+          el.addEventListener('change', updateEnquiryOutputs);
+        }
+      });
+
+      selectEnquiryTriggers.forEach(function (trigger) {
+        trigger.addEventListener('click', function () {
+          const targetArea = trigger.getAttribute('data-select-enquiry');
+          if (areaSelect && targetArea) {
+            areaSelect.value = targetArea;
+            updateEnquiryOutputs();
+          }
+        });
+      });
+
+      // Initialize preview on load
+      updateEnquiryOutputs();
+
+      function showFeedback(message) {
+        if (!copyFeedback) return;
+        copyFeedback.textContent = message;
+        copyFeedback.classList.remove('hidden');
+        setTimeout(function () {
+          copyFeedback.classList.add('hidden');
+        }, 4000);
+      }
+
+      // Copy to clipboard with modern API + fallback
+      if (copyBtn) {
+        copyBtn.addEventListener('click', function () {
+          const textToCopy = buildEnquiryData().body;
+
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            navigator.clipboard.writeText(textToCopy).then(
+              function () {
+                showFeedback('Enquiry note copied to clipboard.');
+              },
+              function () {
+                fallbackCopy(textToCopy);
+              }
+            );
+          } else {
+            fallbackCopy(textToCopy);
+          }
+        });
+      }
+
+      function fallbackCopy(text) {
+        const tempTextarea = document.createElement('textarea');
+        tempTextarea.value = text;
+        tempTextarea.setAttribute('readonly', '');
+        tempTextarea.style.position = 'fixed';
+        tempTextarea.style.left = '-9999px';
+        document.body.appendChild(tempTextarea);
+        tempTextarea.select();
+
+        try {
+          document.execCommand('copy');
+          showFeedback('Enquiry note copied to clipboard.');
+        } catch (err) {
+          showFeedback('Unable to copy automatically. Please select and copy the text in the preview box above.');
+        }
+
+        document.body.removeChild(tempTextarea);
+      }
+    })();
+  </script>
+</body>
+</html>
